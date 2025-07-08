@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pune Sheti Bajar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Teko:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-bg">
+    <!-- Main Container -->
+    <div class="min-h-screen flex items-center justify-center p-4">
+        
+        <!-- Login Card -->
+        <div class="w-full max-w-md bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
+            
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-green-800 font-teko">पुणे शेती बाजार</h1>
+                <p class="text-gray-600 mt-2">तुमच्या खात्यात लॉग इन करा</p>
+            </div>
+
+            <!-- Login Form -->
+            <form action="home.html" method="get">
+                <!-- Email Input -->
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+                        ईमेल ॲड्रेस
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="tumcha@email.com" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300" required>
+                </div>
+
+                <!-- Password Input -->
+                <div class="mb-6">
+                    <label for="password" class="block text-gray-700 text-sm font-bold mb-2">
+                        पासवर्ड
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="••••••••••" class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300" required>
+                </div>
+                
+                <!-- Remember Me & Forgot Password -->
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                        <label for="remember-me" class="ml-2 block text-sm text-gray-900">
+                            मला लक्षात ठेवा
+                        </label>
+                    </div>
+                    <div class="text-sm">
+                        <a href="#" class="font-medium text-green-600 hover:text-green-800">
+                            पासवर्ड विसरलात?
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105">
+                        लॉग इन करा
+                    </button>
+                </div>
+            </form>
+
+            <!-- Sign Up Link -->
+            <p class="text-center text-gray-600 text-sm mt-8">
+                नवीन सदस्य आहात? <a href="#" class="font-medium text-green-600 hover:text-green-800">नवीन खाते तयार करा</a>
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>

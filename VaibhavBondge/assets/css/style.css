@@ -1,0 +1,38 @@
+/* We use Tailwind for most styling, but here are a few custom styles for backgrounds and fonts. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Teko:wght@500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-teko {
+    font-family: 'Teko', sans-serif;
+}
+
+/* Background for the Login Page */
+.login-bg {
+    background-image: linear-gradient(to right, rgba(240, 253, 244, 0.8), rgba(220, 252, 231, 0.8)), url('../images/farm.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Background for the Home Page Hero Section */
+.hero-bg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../images/indian farm sunrise.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates a nice parallax effect */
+}
+
+/* Simple animation for elements on scroll (can be activated with JS if needed) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

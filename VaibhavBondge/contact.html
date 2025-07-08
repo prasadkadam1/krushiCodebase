@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pune Sheti Bajar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Teko:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="home.html" class="text-3xl font-bold text-green-800 font-teko">पुणे शेती बाजार</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="home.html" class="text-gray-600 hover:text-green-700">Home</a>
+                <a href="products.html" class="text-gray-600 hover:text-green-700">Products</a>
+                <a href="home.html#testimonials" class="text-gray-600 hover:text-green-700">Testimonials</a>
+                <a href="contact.html" class="text-green-700 font-semibold">Contact</a>
+            </div>
+            <a href="products.html" class="hidden md:block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">Shop Now</a>
+            <button id="mobile-menu-button" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+             <a href="home.html" class="block text-gray-600 hover:text-green-700">Home</a>
+             <a href="products.html" class="block text-gray-600 hover:text-green-700">Products</a>
+             <a href="home.html#testimonials" class="block text-gray-600 hover:text-green-700">Testimonials</a>
+             <a href="contact.html" class="block text-green-700 font-semibold">Contact</a>
+             <a href="products.html" class="block mt-2 text-center bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">Shop Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h1 class="text-5xl font-bold font-teko text-gray-800">आमच्याशी संपर्क साधा</h1>
+                    <p class="text-gray-600 mt-2">तुमचे प्रश्न, सूचना आणि प्रतिक्रिया आमच्यासाठी महत्त्वाच्या आहेत.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row bg-white shadow-xl rounded-lg overflow-hidden">
+                    <!-- Contact Form -->
+                    <div class="w-full md:w-1/2 p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-6">तुमचा संदेश पाठवा</h2>
+                        <form action="#">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">पूर्ण नाव</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">ईमेल</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">विषय</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">संदेश</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">संदेश पाठवा</button>
+                        </form>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="w-full md:w-1/2 bg-green-600 text-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-6">संपर्क माहिती</h2>
+                        <p class="mb-6">तुम्ही आम्हाला खालील पत्त्यावर भेट देऊ शकता किंवा फोन/ईमेलद्वारे संपर्क साधू शकता.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold">पत्ता</h3>
+                                    <p>गेट नं. ५, कृषी उत्पन्न बाजार समिती, मार्केट यार्ड, पुणे, महाराष्ट्र - ४११००१</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold">फोन</h3>
+                                    <p>+९१ ९८७६५ ४३२१०</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h3 class="font-semibold">ईमेल</h3>
+                                    <p>contact@puneshetibajar.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                             <img src="./assets/images/pune map.png" alt="Map of Pune" class="rounded-lg w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-gray-800">नेहमी विचारले जाणारे प्रश्न (FAQ)</h2>
+                </div>
+                <div class="max-w-4xl mx-auto space-y-4">
+                    <div class="border rounded-lg">
+                        <details class="p-6 cursor-pointer">
+                            <summary class="font-semibold text-lg">डिलिव्हरीसाठी किती वेळ लागतो?</summary>
+                            <p class="mt-4 text-gray-600">पुणे शहरात साधारणपणे ऑर्डर दिल्यानंतर २४ तासांच्या आत डिलिव्हरी केली जाते. शहराबाहेरील भागांसाठी ४८ तास लागू शकतात.</p>
+                        </details>
+                    </div>
+                    <div class="border rounded-lg">
+                        <details class="p-6 cursor-pointer">
+                            <summary class="font-semibold text-lg">उत्पादनाची गुणवत्ता खराब असल्यास काय करावे?</summary>
+                            <p class="mt-4 text-gray-600">तुम्हाला उत्पादनाच्या गुणवत्तेबद्दल काही तक्रार असल्यास, कृपया २४ तासांच्या आत आमच्या ग्राहक सेवेशी संपर्क साधा. आम्ही तुम्हाला पूर्ण परतावा किंवा बदली उत्पादन देऊ.</p>
+                        </details>
+                    </div>
+                    <div class="border rounded-lg">
+                        <details class="p-6 cursor-pointer">
+                            <summary class="font-semibold text-lg">पेमेंटचे कोणते पर्याय उपलब्ध आहेत?</summary>
+                            <p class="mt-4 text-gray-600">तुम्ही क्रेडिट कार्ड, डेबिट कार्ड, UPI (Google Pay, PhonePe), नेट बँकिंग आणि कॅश ऑन डिलिव्हरी (COD) द्वारे पेमेंट करू शकता.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+    <p class="mb-1">Developed with <i class="fas fa-heart text-red-500"></i> by Vaibhav Laxman Bondge</p>
+    <p class="text-xs">Qspider Deccan, Pune | &copy; 2025 All Rights Reserved</p>
+</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
