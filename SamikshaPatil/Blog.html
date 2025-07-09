@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Agriculture Blogs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+        header {
+            background-color: #2b7a78;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .blog-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-title {
+            font-size: 1.2rem;
+            color: #17252a;
+            margin-bottom: 10px;
+        }
+        .blog-date {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .blog-snippet {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+         .home-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            color: #00796B;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+    .home-button:hover {
+        background: #004D40;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>Access Agriculture Blogs</header>
+    <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+
+    <div class="blog-container" id="blogContainer"></div>
+
+    <script>
+        const blogs = [
+            {
+                title: "Homegrown seed can be good",
+                date: "Wednesday, June 25, 2025",
+                snippet: "African leafy vegetables are important for nutrition and increasingly for sale. Shops in Africa are now starting to sell packets of seeds to farmers and gardeners."
+            },
+            {
+                title: "Community seed producers",
+                date: "Wednesday, May 28, 2025",
+                snippet: "Smallholder farmers are part of the private sector, along with agrodealers, traders, and others. Projects encourage farmers to improve livelihoods through seed production."
+            },
+            {
+                title: "Guardians of the mango",
+                date: "Monday, April 28, 2025",
+                snippet: "Weaver ants nesting in large mango trees in Benin protect the trees. Colonies can have millions of ants, taking over the canopy and defending it from pests."
+            },
+            {
+                title: "We share",
+                date: "Wednesday, March 26, 2025",
+                snippet: "Farmers love to experiment with new crop varieties, even if it takes patience. In 2015, vitamin A-rich cassava stems were shared with farmers, producing yellow roots rich in nutrients."
+            },
+            {
+                title: "Earthworms from India to Bolivia",
+                date: "Monday, February 24, 2025",
+                snippet: "A Bolivian journalist produces an environmental programme covering agriculture, learning about composting and earthworm farming from Access Agriculture videos."
+            },
+            {
+                title: "From soil fertility to cheese",
+                date: "Friday, January 24, 2025",
+                snippet: "A project in Peru aimed to improve soil fertility, but women in the community formed an association to sell cheese and yoghurt, showcasing unexpected impacts of development projects."
+            },
+            {
+                title: "From potatoes to cows",
+                date: "Monday, December 30, 2024",
+                snippet: "Script writers visited a community in Ecuador, learning how community organization and knowledge sharing helped them transition from potato farming to livestock management."
+            },
+            {
+                title: "Finding solutions",
+                date: "Saturday, November 23, 2024",
+                snippet: "Farmers in Kenya improved eroded lands with researcher support, learning to manage sand extraction issues to revive their agricultural productivity and livelihoods."
+            },
+            {
+                title: "Commercialising organic inputs",
+                date: "Tuesday, October 22, 2024",
+                snippet: "As the world moves away from chemicals, the potential for selling natural products grows, with ecological farmers using local methods to enhance soil fertility and pest management."
+            },
+            {
+                title: "Coconut coir dust",
+                date: "Monday, September 23, 2024",
+                snippet: "Using coconut coir dust as mulch in tropical farming was highlighted in composting training videos, supporting sustainable agriculture practices across regions."
+            }
+        ];
+
+        const container = document.getElementById('blogContainer');
+        blogs.forEach(blog => {
+            const card = document.createElement('div');
+            card.className = 'blog-card';
+            card.innerHTML = `
+                <div class="blog-title">${blog.title}</div>
+                <div class="blog-date">${blog.date}</div>
+                <div class="blog-snippet">${blog.snippet}</div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
+</body>
+</html>

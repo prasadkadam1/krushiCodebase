@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Entrepreneur Challenge Fund | Access Agriculture</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin:0; padding:0; line-height: 1.6; background: #f9f9f9; color: #333;}
+        header {background: #4CAF50; color: white; padding: 1rem; text-align: center;}
+        section {padding: 1.5rem; max-width: 800px; margin: auto;}
+        h2 {color: #4CAF50; margin-top: 0;}
+        footer {background: #333; color: white; text-align: center; padding: 1rem;}
+        .card {background: white; padding: 1rem; margin: 1rem 0; border-left: 5px solid #4CAF50; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        #scrollBtn {position: fixed; bottom: 20px; right: 20px; padding: 0.5rem 1rem; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; display: none;}
+        a {color: #4CAF50; text-decoration: none;}
+        a:hover {text-decoration: underline;}
+         .home-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            color: #00796B;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }       
+
+        .home-button:hover {
+            background: #004D40;
+            color: white;
+
+        }       
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Young Entrepreneur Challenge Fund</h1>
+    <p>Access Agriculture</p>
+     <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+</header>
+
+<section>
+    <h2>Background</h2>
+    <p>Women and young people are the backbone of agricultural development. Promoting agriculture as a business helps create economic value and encourages youth participation in agriculture. Access Agriculture supports the distribution of quality training videos for farmers across the Global South, enabling peer-to-peer learning and fostering organic agriculture adoption through ICT.</p>
+</section>
+
+<section>
+    <h2>Impact</h2>
+    <div class="card">
+        <p><strong>90,000,000</strong> viewers reached</p>
+        <p><strong>320 entrepreneurs</strong> in 18 countries supported</p>
+        <p><strong>6,000 agroecology videos</strong> in 110 languages available</p>
+    </div>
+</section>
+
+<section>
+    <h2>Digisoft Smart Projectors</h2>
+    <p>The smart projector contains all Access Agriculture videos for offline, off-grid training with a solar panel, battery, and sound system for up to 150 people. It helps entrepreneurs screen videos for farmers even without internet access, supporting local language learning.</p>
+    <p><a href="https://www.accessagriculture.org/young-entrepreneur-challenge-fund-2" target="_blank">Learn More</a></p>
+</section>
+
+<section>
+    <h2>Call for Proposals</h2>
+    <div class="card">
+        <p><strong>Location:</strong> Ghana</p>
+        <p><strong>Task:</strong> Develop a business plan to screen agricultural videos for local farmers using smart projectors.</p>
+        <p><strong>Deadline:</strong> 4 July, 2025</p>
+    </div>
+</section>
+
+<footer>
+    <p>© Access Agriculture 2025 | <a href="https://www.accessagriculture.org/" target="_blank">Visit Site</a></p>
+</footer>
+
+<button id="scrollBtn" onclick="scrollToTop()">Top</button>
+
+<script>
+    window.onscroll = function() {
+        document.getElementById("scrollBtn").style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

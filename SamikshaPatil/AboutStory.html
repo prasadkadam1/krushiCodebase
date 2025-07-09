@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Our Story | Access Agriculture</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Our Story</h1>
+        <p>Empowering farmers through quality learning videos in local languages</p>
+         <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <section class="stats">
+        <div>
+            <h2 id="viewers">0</h2>
+            <p>Viewers</p>
+        </div>
+        <div>
+            <h2 id="entrepreneurs">0</h2>
+            <p>Entrepreneurs</p>
+        </div>
+        <div>
+            <h2 id="videos">0</h2>
+            <p>Agroecology Videos</p>
+        </div>
+        <div>
+            <h2 id="languages">0</h2>
+            <p>Languages</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <button class="accordion">📌 Why We Started</button>
+        <div class="panel">
+            <p>
+                Agricultural advisory services in developing countries face challenges in meeting farmers' diverse demands across crops, livestock, processing, and marketing. Limited resources prevent advisors from reaching millions of farmers, even as research institutes, NGOs, and others strive to find quality training materials. A 2011 survey showed farmers value training videos, especially in local languages, and are willing to pay if it benefits their business. High-quality, relevant videos that can be shared globally while supporting local translations are essential for effective knowledge sharing.
+            </p>
+        </div>
+
+        <button class="accordion">🌱 How We Started</button>
+        <div class="panel">
+            <p>
+                In 2012, Agro-Insight (Belgium) and Countrywise Communication (UK) founded Access Agriculture to promote sharing and use of agricultural training videos in developing countries. With initial funding from the founders and main support from the Swiss Agency for Development and Cooperation (SDC), Access Agriculture enables farmers and advisors to access quality videos globally. Agro-Insight spearheaded the zooming-in, zooming-out method for farmer-to-farmer training, while Countrywise Communication brings extensive experience in video production and training in agriculture and rural development.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Access Agriculture | <a href="https://www.accessagriculture.org" target="_blank">Visit Official Site</a>
+    </footer>
+
+    <style>
+        body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f6faf6;
+    color: #333;
+}
+
+header {
+    background: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+header h1 {
+    margin: 0 0 0.5em 0;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1.5em 1em;
+    background: #e8f5e9;
+}
+
+.stats div {
+    background: white;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stats h2 {
+    color: #2e7d32;
+    font-size: 1.8em;
+}
+
+.content {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.accordion {
+    background-color: #66bb6a;
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    transition: background 0.3s;
+}
+
+.accordion:hover {
+    background-color: #57a05a;
+}
+
+.panel {
+    padding: 0 1em;
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s ease-out, padding 0.3s;
+}
+
+.panel p {
+    margin: 1em 0;
+}
+
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    color: #c8e6c9;
+    text-decoration: none;
+}
+
+    </style>
+
+    <script>
+        // Animated Counters
+document.addEventListener('DOMContentLoaded', () => {
+    animateCount('viewers', 30236609, 2000);
+    animateCount('entrepreneurs', 108, 1500);
+    animateCount('videos', 2013, 1500);
+    animateCount('languages', 37, 1500);
+});
+
+function animateCount(id, target, duration) {
+    const element = document.getElementById(id);
+    let start = 0;
+    const increment = target / (duration / 16);
+
+    function update() {
+        start += increment;
+        if (start < target) {
+            element.textContent = Math.floor(start).toLocaleString();
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target.toLocaleString();
+        }
+    }
+    update();
+}
+
+// Accordion functionality
+const accordions = document.querySelectorAll(".accordion");
+accordions.forEach(acc => {
+    acc.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.padding = "0 1em";
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.padding = "1em";
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

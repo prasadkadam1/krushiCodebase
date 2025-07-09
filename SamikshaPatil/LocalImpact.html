@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Local Impact | Access Agriculture</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h1>Local Impact</h1>
+        <p>Access Agriculture</p>
+         <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+    </header>
+    <main>
+        <section class="impact-stats">
+            <div>90,000,000 viewers</div>
+            <div>6,000 agroecology videos</div>
+            <div>320 entrepreneurs in 18 countries</div>
+            <div>110 languages available</div>
+        </section>
+
+        <section class="description">
+            <p>Access Agriculture shares agroecology videos to empower farmers globally. Stories from the field showcase how videos in local languages improve farming practices and help communities thrive.</p>
+            
+
+        </section>
+
+        <section class="stories">
+            <h2>Stories from the Field</h2>
+            <ul id="storiesList">
+                <li>How to make school fees using chilli sauce</li>
+                <li>Alice in dairy land</li>
+                <li>Showing videos without electricity</li>
+                <li>Smallholders watching videos nationwide</li>
+                <li>Videos on the radio</li>
+                <li>Making farming attractive to youth</li>
+            </ul>
+            <button id="loadMore">Load More Stories</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Access Agriculture 2024. All rights reserved.</p>
+    </footer>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.home-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: white;
+    color: #00796B;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #004D40;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.impact-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.impact-stats div {
+    background-color: #e0f2f1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.description {
+    margin-bottom: 2rem;
+    background-color: #fff3e0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.stories {
+    background-color: #e8f5e9;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.stories h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.stories ul {
+    list-style: disc inside;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+
+    <script>
+        const storiesList = document.getElementById('storiesList');
+const loadMoreBtn = document.getElementById('loadMore');
+
+const additionalStories = [
+    "Farmers pay for learning videos",
+    "Learning more from videos than lead farmers",
+    "Giving birth is the easy part",
+    "DJ'ing on the farm",
+    "Earning money from weeds",
+    "Becoming a journalist farmer",
+    "Ready, Set, Bureaucracy",
+    "Finding the words",
+    "The video tricycle",
+    "In our own language",
+    "When students make farmer training videos",
+    "It will take time before Eletina watches her video"
+];
+
+let currentIndex = 0;
+
+loadMoreBtn.addEventListener('click', () => {
+    if (currentIndex < additionalStories.length) {
+        const li = document.createElement('li');
+        li.textContent = additionalStories[currentIndex];
+        storiesList.appendChild(li);
+        currentIndex++;
+    } else {
+        loadMoreBtn.textContent = 'All stories loaded';
+        loadMoreBtn.disabled = true;
+    }
+});
+
+    </script>
+</body>
+</html>

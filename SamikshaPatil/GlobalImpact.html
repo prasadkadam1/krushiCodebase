@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Agriculture - Global Impact</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        header { background: #2e7d32; color: white; text-align: center; padding: 2rem 1rem; }
+        header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; }
+
+        .metrics { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 2rem 1rem; background: white; }
+        .metric { background: #e8f5e9; padding: 1rem; border-radius: 8px; width: 150px; text-align: center; }
+        .metric h2 { font-size: 1.5rem; color: #1b5e20; }
+        .metric p { font-size: 0.9rem; color: #555; }
+
+        section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
+        section h2 { color: #2e7d32; margin-bottom: 1rem; text-align: center; }
+        section p { margin-bottom: 1rem; text-align: justify; }
+
+        .button { display: inline-block; padding: 0.75rem 1.5rem; background: #2e7d32; color: white; border-radius: 4px; text-decoration: none; margin-top: 1rem; transition: background 0.3s; }
+        .button:hover { background: #1b5e20; }
+
+        footer { background: #2e7d32; color: white; text-align: center; padding: 1rem; font-size: 0.9rem; }
+         .home-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            color: #00796B;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }       
+
+        .home-button:hover {
+            background: #004D40;
+            color: white;
+
+        }       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Access Agriculture: Global Impact</h1>
+        <p>Empowering farmers worldwide with training videos in local languages</p>
+        <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+
+
+    </header>
+
+    <div class="metrics">
+        <div class="metric">
+            <h2>90M+</h2>
+            <p>Viewers Reached</p>
+        </div>
+        <div class="metric">
+            <h2>6,000</h2>
+            <p>Agroecology Videos</p>
+        </div>
+        <div class="metric">
+            <h2>110</h2>
+            <p>Languages Available</p>
+        </div>
+        <div class="metric">
+            <h2>320</h2>
+            <p>Entrepreneurs</p>
+        </div>
+    </div>
+
+    <section id="impact">
+        <h2>Our Global Impact</h2>
+        <p>Over 1,000,000 people have visited the Access Agriculture website to watch and download farmer training videos, empowering farmers with practical knowledge globally. Videos are downloaded by 75% of visitors, with many sharing them across nearly 5,000 organisations.</p>
+        <p>90% of viewers share the videos, enabling collective learning and spreading best practices in pest management, soil health, and sustainable farming. Over 30% have reported improved food and nutrition, higher profits, women’s empowerment, and youth involvement in farming.</p>
+        <a href="#" class="button" id="learnMoreBtn">Learn More</a>
+    </section>
+
+    <footer>
+        © 2025 Access Agriculture. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('learnMoreBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Board | Access Agriculture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Board</h1>
+    <p>Guiding Access Agriculture to empower farmers globally</p>
+    <a href="http://127.0.0.1:5500/AgricultureWebsite.html?#" class="home-button">🏠 Home</a>
+  </header>
+
+  <section class="stats">
+    <div>
+      <h2 id="viewers">0</h2>
+      <p>Viewers</p>
+    </div>
+    <div>
+      <h2 id="entrepreneurs">0</h2>
+      <p>Entrepreneurs</p>
+    </div>
+    <div>
+      <h2 id="videos">0</h2>
+      <p>Agroecology Videos</p>
+    </div>
+    <div>
+      <h2 id="languages">0</h2>
+      <p>Languages</p>
+    </div>
+  </section>
+
+  <section class="board">
+    <h2>Meet Our Board</h2>
+    <div class="board-grid">
+      <div class="card">
+        <img src="./assessts/Screenshot 2025-07-02 164044.png" alt="Anne Bennett">
+        <h3>Anne Bennett</h3>
+        <p>Head of Africa Americas Division at DCAF, working on governance with communities and multilateral organisations.</p>
+      </div>
+      <div class="card">
+        <img src="./assessts/Screenshot 2025-07-02 164055.png" alt="Andrew Makkinga">
+        <h3>Andrew Makkinga</h3>
+        <p>Journalist and discussion leader with experience chairing conversations on African agriculture globally.</p>
+      </div>
+      <div class="card">
+        <img src="./assessts/Screenshot 2025-07-02 164101.png" alt="Francois Stepman">
+        <h3>François Stepman</h3>
+        <p>Over 30 years in development co-operation, research and capacity building, with years of work in Africa.</p>
+      </div>
+      <div class="card">
+        <img src="./assessts/Screenshot 2025-07-02 164109.png" alt="Oumou Wane Touré">
+        <h3>Oumou Wane Touré</h3>
+        <p>Chartered Accountant, member of ONECCA Senegal, with extensive financial expertise in Africa.</p>
+      </div>
+      <div class="card">
+        <img src="./assessts/Screenshot 2025-07-02 164117.png" alt="Nitya Ghotge">
+        <h3>Nitya Ghotge</h3>
+        <p>Veterinarian and co-founder of Anthra NGO in India, focusing on livestock farming and agroecology for 30+ years.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Access Agriculture | <a href="https://www.accessagriculture.org" target="_blank">Visit Official Site</a>
+  </footer>
+
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f6faf6;
+  color: #333;
+}
+
+header {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  margin: 0 0 0.5em 0;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 1em;
+  background: white;
+  color: #4caf50;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1.5em 1em;
+  background: #e8f5e9;
+}
+
+.stats div {
+  background: white;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stats h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+}
+
+.board {
+  max-width: 1000px;
+  margin: 2em auto;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.board h2 {
+  color: #2e7d32;
+  margin-bottom: 1em;
+}
+
+.board-grid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+}
+
+.card h3 {
+  margin: 0.5em 0 0.3em 0;
+  color: #388e3c;
+}
+
+.card p {
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: #c8e6c9;
+  text-decoration: none;
+}
+
+  </style>
+
+  <script>
+    // Animated Counters
+document.addEventListener('DOMContentLoaded', () => {
+  animateCount('viewers', 90000000, 2000);
+  animateCount('entrepreneurs', 320, 1500);
+  animateCount('videos', 6000, 1500);
+  animateCount('languages', 110, 1500);
+});
+
+function animateCount(id, target, duration) {
+  const element = document.getElementById(id);
+  let start = 0;
+  const increment = target / (duration / 16);
+
+  function update() {
+    start += increment;
+    if (start < target) {
+      element.textContent = Math.floor(start).toLocaleString();
+      requestAnimationFrame(update);
+    } else {
+      element.textContent = target.toLocaleString();
+    }
+  }
+  update();
+}
+
+  </script>
+</body>
+</html>

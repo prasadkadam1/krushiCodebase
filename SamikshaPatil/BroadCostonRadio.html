@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broadcast on Radio | Access Agriculture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Broadcast on Radio | Access Agriculture</h1>
+        <p>Promoting sustainable agriculture through radio and video broadcasts globally.</p>
+        <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div>📺 90,000,000 viewers</div>
+            <div>🌍 320 entrepreneurs in 18 countries</div>
+            <div>🎬 6,000 agroecology videos</div>
+            <div>🗣️ 110 languages available</div>
+        </section>
+
+        <section>
+            <h2>Information on Audio Files</h2>
+            <p>Download and use our free MP3 audio files to share sustainable agricultural practices within your community.</p>
+        </section>
+
+        <section>
+            <h2>Ideas for Using Audio Files</h2>
+            <div class="accordion">
+                <button class="accordion-toggle">View Ideas</button>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Play programmes at suitable seasonal times to remind your audience about good practices.</li>
+                        <li>Invite farmers or guests from local extension services or NGOs for discussion.</li>
+                        <li>Host phone-in sessions on subjects raised in the programmes.</li>
+                        <li>Be seen and involved in your community through these broadcasts.</li>
+                        <li>Show videos at your office or stalls to promote your station.</li>
+                        <li>Let us know your innovative use stories for a feature on our website.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Get Involved</h2>
+            <p>We welcome expertise for translating and recording programmes in different local languages. Contact us at:</p>
+            <p><a href="mailto:info@accessagriculture.com">info@accessagriculture.com</a></p>
+        </section>
+
+        <section class="actions">
+            <a href="https://www.accessagriculture.org/sites/default/files/awp/download/2022-02/Radiostations2016English.pdf" class="button" target="_blank">📄 Download PDF</a>
+            <a href="https://www.accessagriculture.org/" class="button" target="_blank">🌐 Visit Access Agriculture</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Access Agriculture 2025. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #00796B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #E0F2F1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    flex: 1 1 40%;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.accordion {
+    margin: 10px 0;
+}
+
+.accordion-toggle {
+    background-color: #00796B;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #00796B;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #004D40;
+}
+
+footer {
+    background: #004D40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const accordionToggle = document.querySelector(".accordion-toggle");
+    const accordionContent = document.querySelector(".accordion-content");
+
+    accordionToggle.addEventListener("click", () => {
+        accordionContent.style.display = accordionContent.style.display === "block" ? "none" : "block";
+        accordionToggle.textContent = accordionContent.style.display === "block" ? "Hide Ideas" : "View Ideas";
+    });
+});
+
+    </script>
+</body>
+</html>

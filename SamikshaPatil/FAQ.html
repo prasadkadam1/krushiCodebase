@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Access Agriculture | FAQ</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Access Agriculture | FAQ</h1>
+        <p>Find answers to frequently asked questions about accessing and using our agroecology videos and audio files.</p>
+        <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div>👥 90,000,000 viewers</div>
+            <div>🌍 320 entrepreneurs in 18 countries</div>
+            <div>🎥 6,000 agroecology videos</div>
+            <div>🗣️ 110 languages available</div>
+        </section>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq-item">
+                    <button class="faq-question">Why do the videos take a long time to start?</button>
+                    <div class="faq-answer">
+                        <p>Video load time depends on your internet speed. We recommend downloading videos for smoother playback if your connection is slow.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I be part of your project?</button>
+                    <div class="faq-answer">
+                        <p>Yes, Access Agriculture welcomes collaboration for video production, translation, and distribution. Contact us to get involved.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I upload my own videos?</button>
+                    <div class="faq-answer">
+                        <p>Yes, you can submit your agroecology videos by following our video submission guidelines on the website.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer technical advice on video production?</button>
+                    <div class="faq-answer">
+                        <p>Access Agriculture offers resources and guidelines to help improve your video production quality for agroecology content.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you have programmes for women farmers?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we have programmes tailored for women farmers, supporting their learning and engagement in sustainable farming practices.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Why do I need to register to download files?</button>
+                    <div class="faq-answer">
+                        <p>Registration helps us track usage and impact, ensuring continued free access to quality agroecology resources worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <a href="https://www.accessagriculture.org/faq" class="button" target="_blank">Visit Full FAQ Page</a>
+            <a href="mailto:info@accessagriculture.com" class="button">Contact Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Access Agriculture. All rights reserved.</p>
+    </footer>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+header {
+    background: #00796B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: #E0F2F1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.stats div {
+    flex: 1 1 40%;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.faq .faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background: #00796B;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-answer {
+    background: #ffffff;
+    border-left: 3px solid #00796B;
+    padding: 10px;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.button {
+    background: #00796B;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #004D40;
+}
+
+footer {
+    background: #004D40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const questions = document.querySelectorAll(".faq-question");
+
+    questions.forEach(question => {
+        question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+            const isVisible = answer.style.display === "block";
+            answer.style.display = isVisible ? "none" : "block";
+            question.classList.toggle("active");
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

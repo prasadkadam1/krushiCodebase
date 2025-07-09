@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Mission | Access Agriculture</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Our Mission</h1>
+    <p>Empowering farmers through agroecological knowledge in local languages</p>
+    <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+
+  </header>
+
+  <section class="stats">
+    <div>
+      <h2 id="viewers">0</h2>
+      <p>Viewers</p>
+    </div>
+    <div>
+      <h2 id="entrepreneurs">0</h2>
+      <p>Entrepreneurs</p>
+    </div>
+    <div>
+      <h2 id="videos">0</h2>
+      <p>Agroecology Videos</p>
+    </div>
+    <div>
+      <h2 id="languages">0</h2>
+      <p>Languages</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <button class="collapsible">🌿 Our Vision</button>
+    <div class="content-box">
+      <p>Fair, healthy, and resilient food systems that respect people, the planet, and future generations.</p>
+    </div>
+
+    <button class="collapsible">🎯 Our Mission</button>
+    <div class="content-box">
+      <p>Enable co-creation and exchange of agroecological knowledge through quality learning videos in local languages using digital tools and innovative scaling models.</p>
+    </div>
+
+    <button class="collapsible">💚 Our Values</button>
+    <div class="content-box">
+      <ul>
+        <li>Respect and value for local knowledge and innovations</li>
+        <li>Value for the environment and ecosystems</li>
+        <li>Professional, effective, informed by relevant science</li>
+        <li>Creative, flexible, and innovative</li>
+        <li>Sensitive to gender</li>
+        <li>Quality, equality, and ethics</li>
+        <li>Passion</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Access Agriculture | <a href="https://www.accessagriculture.org" target="_blank">Visit Official Site</a>
+  </footer>
+
+  <style>
+
+  
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f6faf6;
+  color: #333;
+}
+
+header {
+  background: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+header h1 {
+  margin: 0 0 0.5em 0;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1.5em 1em;
+  background: #e8f5e9;
+  
+}
+
+.stats div {
+  background: white;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  width: 140px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.stats h2 {
+  color: #2e7d32;
+  font-size: 1.8em;
+}
+
+.content {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.collapsible {
+  background-color: #66bb6a;
+  color: white;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.1em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+  transition: background 0.3s;
+}
+
+.collapsible:hover {
+  background-color: #57a05a;
+}
+
+.content-box {
+  padding: 0 1em;
+  max-height: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  transition: max-height 0.3s ease-out, padding 0.3s;
+}
+
+.content-box p, .content-box ul {
+  margin: 1em 0;
+}
+
+.content-box ul {
+  padding-left: 1.2em;
+}
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+footer a {
+  color: #c8e6c9;
+  text-decoration: none;
+}
+</style>
+
+  <script>
+    // Animated Counters
+document.addEventListener('DOMContentLoaded', () => {
+  animateCount('viewers', 90000000, 2000);
+  animateCount('entrepreneurs', 320, 1500);
+  animateCount('videos', 6000, 1500);
+  animateCount('languages', 110, 1500);
+});
+
+function animateCount(id, target, duration) {
+  const element = document.getElementById(id);
+  let start = 0;
+  const increment = target / (duration / 16);
+
+  function update() {
+    start += increment;
+    if (start < target) {
+      element.textContent = Math.floor(start).toLocaleString();
+      requestAnimationFrame(update);
+    } else {
+      element.textContent = target.toLocaleString();
+    }
+  }
+  update();
+}
+
+// Collapsible Sections
+const collapsibles = document.querySelectorAll('.collapsible');
+collapsibles.forEach(btn => {
+  btn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    const content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      content.style.padding = "0 1em";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.padding = "1em";
+    }
+  });
+});
+
+  </script>
+</body>
+</html>
