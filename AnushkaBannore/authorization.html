@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmSmart - Authorization</title>
+  <link rel="stylesheet" href="./authorization.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="div">
+        <img src="./asset/logo.avif" alt="Logo" height="60px" width="60px">
+        <strong>FarmSmart</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>User Authorization & Role Simulation</h1>
+    <div class="auth-section">
+      <h2>🧾 Purpose</h2>
+      <p>This platform provides free and open access to agricultural schemes, resources, and government initiatives. It is built to empower farmers and support community outreach.</p>
+
+      <h2>🛡 Role-Based Access</h2>
+      <p>Currently, all users enjoy full access to information. In future updates, specific roles will unlock tailored features and permissions.</p>
+
+      <h2>🧑‍🌾 Try Role Simulation</h2>
+      <label for="role">Select a Role:</label>
+      <select id="role" onchange="showRoleInfo()">
+        <option value="">-- Choose a role --</option>
+        <option value="farmer">Farmer</option>
+        <option value="officer">Government Officer</option>
+        <option value="admin">Administrator</option>
+      </select>
+      <div id="role-info"></div>
+
+      <h2>🔐 Data Privacy</h2>
+      <p>This platform does not collect personal data. Only non-sensitive data (like simulated role) is stored locally to personalize your experience.</p>
+
+      <h2>✅ Terms of Use</h2>
+      <p>By using this site, you agree to use the resources for educational and informational purposes only. Unauthorized data misuse is prohibited.</p>
+
+      <h2>🛣 Future Feature Timeline</h2>
+      <div class="timeline">
+        <p><strong>🟢 Q2 2025:</strong> Open access platform launch</p>
+        <p><strong>🟡 Q3 2025:</strong> Farmer login + Scheme Application Portal</p>
+        <p><strong>🟠 Q4 2025:</strong> Officer dashboard & scheme review tools</p>
+        <p><strong>🔴 2026:</strong> Admin analytics + Mobile App integration</p>
+      </div>
+
+      <h2>❓ Frequently Asked Questions</h2>
+      <details>
+        <summary>Why don't I need an account right now?</summary>
+        <p>To ensure quick and barrier-free access to government schemes and updates.</p>
+      </details>
+      <details>
+        <summary>Will login be required later?</summary>
+        <p>Yes. When applying or saving data, role-based login will be introduced.</p>
+      </details>
+      <details>
+        <summary>Where is my role information stored?</summary>
+        <p>In your browser’s localStorage only. We do not store it on servers.</p>
+      </details>
+
+      <div class="login-sim">
+        <p><strong>🔐 Login Simulation:</strong> Your selected role is saved locally. Reloading this page will show your role as a returning user.</p>
+      </div>
+
+      <h2>📞 Support</h2>
+      <p>Need help? Email us at <strong>support@farmsmart.in</strong> or call +91-9876543210.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FarmSmart. All rights reserved.</p>
+    <p>Empowering Indian farmers through transparent, tech-enabled agricultural information.</p>
+    <p>Contact: <a href="mailto:support@farmsmart.in" style="color:white;">support@farmsmart.in</a> | Phone: +91-9876543210</p>
+    <p>Follow us:
+      <a href="#"><i class="fa-brands fa-square-facebook" ></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </p>
+  </footer>
+  <script src="./authorization.js"></script>
+</body>
+</html>

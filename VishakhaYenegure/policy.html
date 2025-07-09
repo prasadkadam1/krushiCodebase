@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroFarm - Policies</title>
+  <link rel="stylesheet" href="policy.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AgroFarm</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Sustainability Policy</a></li>
+      <li><a href="#">Food Safety</a></li>
+      <li><a href="Welfare.html">Farmer Welfare</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <section class="hero">
+    <img src="./assests/welfare.jpg" alt="Policy 1">
+    <img src="./assests/prosperous.jpg_large" alt="Policy 2">
+    <img src="./assests/schemes.webp" alt="Policy 3">
+    <img src="./assests/tractor.jpg" alt="Policy 4">
+</section>
+
+  <!-- Policy Cards -->
+  <section class="policy-section">
+    <div class="policy-card">
+      <img src="https://img.freepik.com/free-photo/green-cornfield-close-up-leaves-agriculture_1150-11148.jpg" alt="Sustainability">
+      <h3>Sustainability Policy</h3>
+      <p>We implement eco-friendly farming practices to reduce environmental impact.</p>
+    </div>
+
+    <div class="policy-card">
+      <img src="https://img.freepik.com/free-photo/food-safety-concept-ingredients-black-background-top-view_1220-6556.jpg" alt="Food Safety">
+      <h3>Food Safety</h3>
+      <p>We ensure all produce meets high safety standards with regular quality checks.</p>
+    </div>
+
+    <div class="policy-card">
+      <img src="https://img.freepik.com/free-photo/farmer-working-digital-tablet-field_53876-124099.jpg" alt="Farmer Welfare">
+      <h3>Farmer Welfare</h3>
+      <p>We support fair pricing, financial assistance, and regular farmer training.</p>
+    </div>
+  </section>
+
+  <!-- Policy Info -->
+  <section class="info-section">
+    <h2>Policy Information</h2>
+    <p><strong>Effective Date:</strong> January 1, 2025</p>
+    <p><strong>Company Address:</strong> AgroFarm Pvt. Ltd., Plot No. 12, AgriTech Park, Nashik, Maharashtra, India</p>
+    <p><strong>Policy Manager:</strong> Mr. Suresh Patil – suresh@agrofarm.com</p>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <h2>Have Questions About Our Policies?</h2>
+    <form class="policy-form" onsubmit="return showAlert(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="policy-footer">
+    <p>&copy; 2025 AgroFarm. All rights reserved.</p>
+    <p>Committed to responsible agriculture and farmer empowerment.</p>
+  </footer>
+
+  <script src="policy.js"></script>
+</body>
+</html>

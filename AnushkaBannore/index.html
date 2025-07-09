@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmSmart - Home</title>
+  <link rel="stylesheet" href="./style.css">
+  
+ 
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="div">
+        <img src="./asset/logo.avif" alt="" height="60px" width="60px">
+        <strong>FarmSmart</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to FarmSmart</h1>
+      <p>Your gateway to modern farming with smart tools, government schemes, and expert advice.</p>
+    </section>
+
+    <section class="img-wrapper">
+      <button class="scroll-btn left" onclick="scrollImages(-1)">&#10094;</button>
+      <div class="img" id="imageScroll">
+        <img src="./asset/img0.jpg" alt="Farm 1">
+        <img src="./asset/img1.avif" alt="Farm 2">
+        <img src="./asset/img2.png" alt="Farm 3">
+        <img src="./asset/img4.webp" alt="Farm 4">
+        <img src="./asset/img5.jpg" alt="Farm 5">
+        <img src="./asset/img6.jpg" alt="Farm 6">
+      </div>
+      <button class="scroll-btn right" onclick="scrollImages(1)">&#10095;</button>
+    </section>
+
+    <section class="about-section">
+      <h2>About FarmSmart</h2>
+      <p>FarmSmart empowers Indian farmers with digital tools, crop pricing, and government schemes for sustainable agriculture. Smart farming, also known as precision agriculture, is the use of modern technologies to enhance the efficiency, productivity, and sustainability of agricultural practices.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature" onclick="openModal('scheme')">📋 Scheme Access</div>
+      <div class="feature" onclick="openModal('mandi')">📈 Mandi Prices & Weather</div>
+      <div class="feature" onclick="openModal('irrigation')">💧 Smart Irrigation</div>
+      <div class="feature" onclick="openModal('tools')">📱 Digital Farm Tools</div>
+      <div class="feature" onclick="openModal('soil')">🧪 Soil Testing</div>
+      <div class="feature" onclick="openModal('machinery')">🚜 Machinery Marketplace</div>
+      <div class="feature" onclick="openModal('records')">📊 Farm Record Keeping</div>
+      <div class="feature" onclick="openModal('advisory')">🧑‍🌾 Expert Advisory</div>
+      <div class="feature" onclick="openModal('organic')">🌾 Organic Practices</div>
+      <div class="feature" onclick="openModal('marketplace')">📦 E-Marketplace</div>
+    </section>
+
+    <div id="featureModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <section style="text-align:center; background:#dbfbe5; padding:2rem;">
+  <h2>🌱 Stay Updated!</h2>
+  <p>Subscribe to get the latest updates on schemes, tools & farming tips.</p>
+  <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+    <input type="email" placeholder="Enter your email" required style="padding:0.5rem; width:250px; max-width:80%; border-radius:5px; border:1px solid #4caf50;">
+    <button type="submit" style="padding:0.5rem 1rem; background:#4caf50; color:white; border:none; border-radius:5px;">Subscribe</button>
+  </form>
+</section>
+
+
+  <section style="padding: 2rem; background: #dbfbe5;">
+  <h2 style="text-align:center; color:#2e7d32;">📚 Frequently Asked Questions</h2>
+  <details style="margin-top:1rem;">
+    <summary style="font-weight:bold;">How can I access government schemes?</summary>
+    <p>You can apply through CSC centers or use our FarmSmart Scheme section.</p>
+  </details>
+  <details>
+    <summary style="font-weight:bold;">Is FarmSmart available as a mobile app?</summary>
+    <p>Yes! The app version will be launched soon for Android devices.</p>
+  </details>
+  <details>
+    <summary style="font-weight:bold;">Is my data secure on FarmSmart?</summary>
+    <p>Yes, we do not share your information and use HTTPS for secure access.</p>
+  </details>
+</section>
+
+<section style="background:#dbfbe5; text-align:center; padding:2rem;">
+  <h2>🔗 Connect With Us</h2>
+  <p>Follow FarmSmart on social media for tips, tutorials & updates.</p>
+  <div style="font-size:1.5rem;">
+    <a href="#" style="margin:0 1rem; color:#4caf50;">🌐 Facebook</a>
+    <a href="#" style="margin:0 1rem; color:#4caf50;">🐦 Twitter</a>
+    <a href="#" style="margin:0 1rem; color:#4caf50;">📸 Instagram</a>
+  </div>
+</section>
+
+<section style="padding:2rem; background:#dbfbe5; text-align:center;">
+  <h2>💬 How are we doing?</h2>
+  <p>We'd love to hear your thoughts! Rate your experience:</p>
+  <div id="rating-stars" style="font-size:2rem; cursor:pointer;">
+    ⭐⭐⭐⭐⭐
+  </div>
+  <button onclick="openFeedbackForm()" style="margin-top:1rem; background:#4caf50; color:white; border:none; padding:0.5rem 1rem; border-radius:5px;">Leave Feedback</button>
+</section>
+
+<div id="feedbackModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFeedbackForm()">&times;</span>
+    <h2>We value your feedback!</h2>
+    <textarea id="feedbackText" rows="5" placeholder="Write your feedback here..." style="width:100%; padding:1rem; border:1px solid #ccc; border-radius:5px;"></textarea>
+    <button onclick="submitFeedback()" style="margin-top:1rem; background:#4caf50; color:white; border:none; padding:0.5rem 1rem; border-radius:5px;">Submit</button>
+  </div>
+</div>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <div>
+        <h3>About</h3>
+        <p>FarmSmart bridges traditional and smart farming. Trusted by Indian farmers.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="schemes.html" style="color:white;">Schemes</a></p>
+        <p><a href="resources.html" style="color:white;">Resources</a></p>
+        <p><a href="contact.html" style="color:white;">Contact</a></p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: support@farmsmart.in</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Location: AgroTech Hub, Pune, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FarmSmart. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>

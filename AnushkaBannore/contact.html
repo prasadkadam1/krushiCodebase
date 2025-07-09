@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmSmart - Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="div">
+        <img src="./asset/logo.avif" alt="Logo" height="60px" width="60px">
+        <strong>FarmSmart</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p id="success-msg">Your message has been sent successfully!</p>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="Your Name" required />
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="Your Email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FarmFusion. All rights reserved.</p>
+    <p>Empowering Indian farmers with technology, resources, and government support.</p>
+    <p>Contact us: <a href="mailto:support@farmfusion.in" style="color:white;">support@farmfusion.in</a> | +91-9876543210</p>
+    <p>Follow us:
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </p>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

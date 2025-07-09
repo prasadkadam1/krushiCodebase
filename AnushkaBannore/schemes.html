@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmSmart - Schemes</title>
+  <link rel="stylesheet" href="./schemes.css">
+</head>
+ <script>
+    const schemes = {
+      pmkisan: {
+        title: "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+        body: `<p>Provides direct income support of ₹6,000/year in 3 installments to all landholding farmers across India. The scheme is implemented by the Ministry of Agriculture and aims to ensure financial support and input affordability for small and marginal farmers.
+          The Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a flagship central sector scheme launched by the Government of India to provide financial support to all landholding farmer families. Under this scheme, eligible farmers receive ₹6,000 per year in three equal installments of ₹2,000 directly into their bank accounts. The objective is to supplement the income of farmers to help them meet agricultural and household expenses, thereby ensuring a dignified life.
+          <br/>
+          <br/>
+          <strong>Benefits : </strong> Include timely financial assistance to farmers irrespective of the size of their landholding, encouragement to invest in better seeds and farming practices, and reduction of dependence on informal credit. The direct benefit transfer (DBT) ensures transparency and eliminates middlemen. The scheme also provides a safety net during times of crop failure or financial stress, and helps boost rural consumption and economic stability in the farming community.</p>`
+          
+      },
+      pmfby: {
+        title: "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+        body: `<p>Offers crop insurance coverage for natural calamities, pests, and diseases. Farmers pay a nominal premium (2% for Kharif, 1.5% for Rabi) while the government subsidizes the rest. Ensures timely compensation and promotes risk-free farming.The Pradhan Mantri Fasal Bima Yojana (PMFBY) is a government-sponsored crop insurance scheme launched to protect farmers against crop loss due to natural calamities, pests, and diseases. It provides comprehensive risk coverage from pre-sowing to post-harvest stages for notified crops. Farmers pay a minimal premium — 2% for Kharif crops, 1.5% for Rabi crops, and 5% for commercial/horticultural crops — while the rest is subsidized by the government.
+        <br/><br/>
+        <strong>Benefits : </strong> Include financial protection against crop failure, ensuring stability of income for farmers. It encourages them to adopt innovative and improved farming practices without the fear of losing income due to unpredictable weather or disasters. The scheme also promotes credit flow in agriculture by reducing loan default risk. Through technology like remote sensing and mobile apps, claim processing has become more efficient and transparent. Overall, PMFBY reduces the burden of risk and supports sustainable agricultural growth.
+        </p>`
+      },
+      pmksy: {
+        title: "PM Krishi Sinchayee Yojana (PMKSY)",
+        body: `<p>Focused on irrigation expansion and water use efficiency. Promotes micro-irrigation systems like drip and sprinkler, rainwater harvesting, and watershed development. Aims for “Har Khet Ko Pani”.The Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) is a flagship irrigation scheme aimed at improving farm water use efficiency through expanded and modernized irrigation infrastructure. Its primary goal is "Har Khet Ko Pani" (Water for Every Field) and "Per Drop More Crop", promoting micro-irrigation technologies like drip and sprinkler systems.The scheme integrates various water resource management components such as accelerated irrigation, watershed development, and surface/minor irrigation projects. It also promotes convergence of investments in irrigation at the field level, improving water delivery and usage across India.
+        <br/><br/>
+        <strong>Benefits : </strong>Include enhanced crop productivity through timely and adequate irrigation, improved water-use efficiency, and reduced water wastage. It helps marginal and small farmers access micro-irrigation systems at subsidized rates, ensuring better yield with less water. PMKSY reduces farmers’ dependence on monsoons and supports climate-resilient agriculture, promoting sustainable and inclusive growth in the farming sector.
+         </p>`
+      },
+      smam: {
+        title: "Sub-Mission on Agricultural Mechanization (SMAM)",
+        body: `<p>Provides subsidies to farmers and FPOs for buying tractors, harvesters, tillers, and other mechanized tools. Enhances productivity, reduces labor dependency, and boosts precision farming.The Sub-Mission on Agricultural Mechanization aims to increase the reach of farm mechanization to small and marginal farmers, especially in remote and difficult areas. It promotes the use of modern machinery like tractors, planters, harvesters, and sprayers to reduce manual labor and enhance efficiency.
+        <br/><br/>
+        <strong>Benefits : </strong>This scheme provides up to 80% subsidy on equipment, making it affordable for smallholders. It encourages shared ownership through Custom Hiring Centres (CHCs), helping reduce capital investment by individual farmers. Mechanization reduces time and effort, boosts productivity, and enables precision farming, ultimately leading to higher yields and reduced drudgery.
+        </p>`
+      },
+      nam: {
+        title: "National Agriculture Market (eNAM)",
+        body: `<p>A unified online trading platform for agricultural commodities. Helps farmers get fair prices and access multiple markets by integrating 1,000+ regulated mandis across India.eNAM is a digital platform that connects over 1,000 APMC mandis across India into a unified online market. It allows farmers to sell their produce directly to buyers across states, promoting transparent and competitive price discovery.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>By eliminating middlemen, eNAM ensures farmers receive better prices for their produce. The portal provides real-time price data, quality grading, and online payments, enhancing farmer income and convenience. It reduces transportation cost, delays, and market exploitation, while also encouraging inter-state trade of agricultural goods.
+        </p>`
+      },
+      nmsa: {
+        title: "National Mission for Sustainable Agriculture (NMSA)",
+        body: `<p>Promotes climate-resilient practices such as integrated farming, water use efficiency, soil management, and agroforestry. Supports adaptation to climate change in agriculture.NMSA addresses climate-related risks in farming by promoting sustainable practices like soil health management, efficient irrigation, and integrated nutrient management. It aims to build resilience among farmers through eco-friendly, adaptive farming techniques.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>This mission helps farmers mitigate the impact of climate change by adopting drought/flood-resistant crops, organic methods, and water-saving technologies. It improves long-term soil health and water-use efficiency, leading to better yields and lower input costs. The focus on sustainability ensures food security while protecting natural resources.
+
+
+        </p>`
+      },
+      rky: {
+        title: "Rashtriya Krishi Vikas Yojana (RKVY)",
+        body: `<p>Provides flexibility to states for agriculture development projects. Encourages innovations, agritech entrepreneurship, and holistic rural development.RKVY is a centrally sponsored scheme that provides financial assistance to states for implementing agriculture-related projects. It promotes holistic development through infrastructure, innovation, and technology in farming and allied sectors.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>The scheme funds a wide range of activities including cold storage, value chain development, agri-startups, livestock management, and crop diversification. It enhances productivity, generates rural employment, and boosts farmer income by aligning projects with local needs and resources.
+
+
+        </p>`
+      },
+      kcc: {
+        title: "Kisan Credit Card (KCC)",
+        body: `<p>Enables farmers to avail short-term credit for crops, equipment, and personal needs at low interest. Includes insurance and is linked with PMFBY.The Kisan Credit Card scheme provides farmers with timely access to affordable credit for crop production and related needs. It functions like a debit card for agricultural inputs and also covers allied activities like dairy and fisheries.
+        <br/><br/>
+        <strong>Benefits : </strong>KCC offers flexible, low-interest loans with easy disbursal and repayment options. It reduces farmers' dependency on moneylenders and supports them in buying seeds, fertilizers, and equipment. The card also provides insurance cover and is integrated with crop loan waivers and financial inclusion schemes.
+        </p>`
+      },
+      pkvy: {
+        title: "Paramparagat Krishi Vikas Yojana (PKVY)",
+        body: `<p>Encourages chemical-free organic farming through group farming, cluster certification, and promotion of bio-inputs. Linked to market access and awareness programs.PKVY promotes organic farming through group adoption and certification of traditional agricultural practices. It supports clusters of farmers in transitioning from chemical to organic farming with training, input support, and market linkage.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>Farmers receive financial help for organic inputs, certification, and awareness programs. This improves soil health, biodiversity, and food safety. Organic produce fetches premium prices in both domestic and international markets, enhancing income while reducing input costs and environmental harm.
+
+
+        </p>`
+      },
+      soil: {
+        title: "Soil Health Card Scheme",
+        body: `<p>Provides farmers with detailed analysis of soil health, nutrient levels, and crop-specific fertilizer recommendations. Promotes judicious use of inputs and boosts productivity.The Soil Health Card Scheme provides farmers with periodic reports about the condition of their soil, including nutrient levels and pH. This scientific assessment helps them make informed decisions about fertilizer and crop use.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>By using the right amount of inputs, farmers reduce costs and improve yields. The scheme promotes balanced fertilization, prevents overuse of chemicals, and improves long-term soil fertility. It encourages scientific farming and contributes to sustainable agriculture.
+
+
+        </p>`
+      },
+      nmsa2: {
+        title: "Agriculture Infrastructure Fund (AIF)",
+        body: `<p>Provides financial support for building warehouses, cold chains, primary processing centers, and marketing facilities under a ₹1 lakh crore corpus. Loans available at subsidized interest rates.The AIF provides medium-to-long term debt financing for building post-harvest infrastructure and community farming assets. It supports warehouses, cold chains, grading units, and processing facilities.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>This fund offers 3% interest subvention and credit guarantees, making loans affordable for FPOs, PACS, startups, and entrepreneurs. It reduces post-harvest losses, increases value addition, and helps farmers store and sell at optimal prices, boosting overall profitability.
+
+
+        </p>`
+      },
+      horti: {
+        title: "National Horticulture Mission",
+        body: `<p>Supports integrated development of horticulture crops through nurseries, post-harvest infrastructure, and training. Focused on income generation through high-value crops.NHM promotes the development of the horticulture sector, which includes fruits, vegetables, spices, flowers, and medicinal plants. It focuses on production, post-harvest management, and marketing support.
+        
+        <br/><br/>
+        <strong>Benefits : </strong> The scheme provides subsidies for planting material, drip irrigation, greenhouses, and training. It increases crop diversity, enhances farm income, and creates employment in rural areas. Horticulture also improves nutritional security and supports agro-processing industries. 
+        </p>`
+      },
+      npcf: {
+        title: "National Project on Climate Resilient Agriculture",
+        body: `<p>Promotes technologies, research, and field models that help farmers adapt to climate change. Includes weather forecasting, early warning systems, and drought mitigation support.NPCRA supports research and development in climate-resilient agriculture. It focuses on technologies and practices that help farmers adapt to the adverse effects of climate variability.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>By promoting stress-tolerant crop varieties, adaptive irrigation, and agro-advisories, the scheme empowers farmers to handle droughts, floods, and other challenges. It enhances preparedness, ensures stable productivity, and builds long-term resilience in agriculture.
+        </p>`
+      },
+      agrimark: {
+        title: "Integrated Scheme for Agricultural Marketing (ISAM)",
+        body: `<p>Focuses on market reforms, grading standards, and modernization of rural markets. Encourages aggregation and e-trading.ISAM enhances the marketing infrastructure and logistics for agricultural produce. It promotes scientific storage, grading, and direct farmer-market linkages.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>Farmers benefit from reduced wastage and better price realization through improved warehousing and value addition. The scheme supports e-markets and facilitates transparent transactions, boosting efficiency in the agricultural value chain.
+        </p>`
+      },
+      sfac: {
+        title: "Small Farmers’ Agribusiness Consortium (SFAC)",
+        body: `<p>Supports FPOs, agri-entrepreneurs, and smallholder collectives with market access, value chain integration, and agribusiness promotion.SFAC supports small farmers by promoting Farmer Producer Organizations (FPOs) and linking them to agribusinesses. It aims to enhance market access, credit, and value-chain participation for smallholders.
+          
+        <br/><br/>
+        <strong>Benefits : </strong>By forming FPOs, farmers pool resources and collectively bargain for inputs and sales, improving profitability. SFAC offers support in registration, credit linkage, infrastructure, and marketing. This empowers farmers, strengthens their market presence, and reduces input costs through economies of scale.
+        </p>`
+      },
+      
+    };
+
+    function openModal(key) {
+      document.getElementById('modalTitle').innerText = schemes[key].title;
+      document.getElementById('modalBody').innerHTML = schemes[key].body;
+      document.getElementById('schemeModal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('schemeModal').style.display = 'none';
+    }
+  </script>
+    
+    
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="div">
+        <img src="./asset/logo.avif" alt="Logo" height="60px" width="60px">
+        <strong>FarmSmart</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+<div id="scheme-detail-container">
+  <div id="detail-PM-KISAN" class="scheme-details">
+    <h2>PM-KISAN Yojana</h2>
+    <p>Provides ₹6,000/year to small & marginal farmers directly in three installments.</p>
+    <ul>
+      <li>Financial support without middlemen</li>
+      <li>Helps purchase seeds, manure, and basic needs</li>
+      <li>Encourages financial inclusion</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Fasal" class="scheme-details">
+    <h2>Fasal Bima Yojana</h2>
+    <p>Insurance cover against crop failure due to natural calamities and diseases.</p>
+    <ul>
+      <li>Affordable premium (2% for Kharif, 1.5% Rabi)</li>
+      <li>Protects against major income losses</li>
+      <li>Supports farmer confidence</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Soil" class="scheme-details">
+    <h2>Soil Health Card</h2>
+    <p>Provides farmers with soil nutrient data and recommended treatment.</p>
+    <ul>
+      <li>Better yield with precise input</li>
+      <li>Reduces excessive use of fertilizers</li>
+      <li>Maintains soil quality and fertility</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-eNAM" class="scheme-details">
+    <h2>eNAM Platform</h2>
+    <p>Digital agricultural marketing platform to sell produce online.</p>
+    <ul>
+      <li>Real-time price discovery</li>
+      <li>Removes middlemen and boosts transparency</li>
+      <li>Pan-India market access</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-KCC" class="scheme-details">
+    <h2>Kisan Credit Card</h2>
+    <p>Credit support to farmers for cultivation and personal expenses.</p>
+    <ul>
+      <li>Low interest rates</li>
+      <li>Flexible withdrawal and repayment</li>
+      <li>Helps manage agri expenses efficiently</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Sinchayee" class="scheme-details">
+    <h2>Krishi Sinchayee Yojana</h2>
+    <p>National-level irrigation scheme to improve water efficiency.</p>
+    <ul>
+      <li>Promotes drip/sprinkler systems</li>
+      <li>Ensures water reaches every farm</li>
+      <li>Boosts productivity per drop</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-RKVY" class="scheme-details">
+    <h2>RKVY Scheme</h2>
+    <p>Rashtriya Krishi Vikas Yojana supports state-level agri innovation and infra.</p>
+    <ul>
+      <li>Funds modern agri infrastructure</li>
+      <li>Promotes research, marketing, and storage</li>
+      <li>Flexible state-wise project planning</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-SAM" class="scheme-details">
+    <h2>Sustainable Agriculture Mission</h2>
+    <p>Supports eco-friendly and climate-resilient farming practices.</p>
+    <ul>
+      <li>Reduces emissions</li>
+      <li>Promotes organic manure and bio-pesticides</li>
+      <li>Improves crop resistance to climate change</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-PKVY" class="scheme-details">
+    <h2>Paramparagat Krishi Vikas Yojana</h2>
+    <p>Cluster-based organic farming with group certification support.</p>
+    <ul>
+      <li>Encourages chemical-free farming</li>
+      <li>Ensures premium pricing in markets</li>
+      <li>Healthier produce and sustainable soil</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Infra" class="scheme-details">
+    <h2>Agri-Infra Fund</h2>
+    <p>Loan facility for post-harvest infrastructure like cold storage.</p>
+    <ul>
+      <li>Reduces wastage</li>
+      <li>Improves supply chain and logistics</li>
+      <li>Enables better price realization</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Beekeeping" class="scheme-details">
+    <h2>National Beekeeping Mission</h2>
+    <p>Supports scientific beekeeping for increased crop productivity and income.</p>
+    <ul>
+      <li>Promotes pollination and biodiversity</li>
+      <li>Income through honey and wax production</li>
+      <li>Training and equipment for beekeepers</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-MIF" class="scheme-details">
+    <h2>Micro Irrigation Fund</h2>
+    <p>Financial aid for micro irrigation projects like drip/sprinklers.</p>
+    <ul>
+      <li>Optimizes water usage</li>
+      <li>Improves water-use efficiency</li>
+      <li>Supports high-yield farming</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Food" class="scheme-details">
+    <h2>National Food Security Mission</h2>
+    <p>Ensures food security by increasing productivity of key staples.</p>
+    <ul>
+      <li>Focus on rice, wheat, pulses, millets</li>
+      <li>Supports farm mechanization</li>
+      <li>Ensures minimum food supply to citizens</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Livestock" class="scheme-details">
+    <h2>Livestock Health & Disease Control</h2>
+    <p>Free vaccination, disease monitoring, and veterinary support to livestock owners.</p>
+    <ul>
+      <li>Reduces outbreak risks</li>
+      <li>Increases livestock productivity</li>
+      <li>Supports veterinary infrastructure</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Dairy" class="scheme-details">
+    <h2>Dairy Entrepreneurship Development</h2>
+    <p>Assistance to establish dairy farms, milk storage units, and allied infrastructure.</p>
+    <ul>
+      <li>Promotes self-employment in rural areas</li>
+      <li>Ensures better milk handling and quality</li>
+      <li>Improves income of dairy farmers</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+  <div id="detail-Export" class="scheme-details">
+    <h2>Agri Export Policy</h2>
+    <p>Policy framework to encourage agri-export and boost farmer income globally.</p>
+    <ul>
+      <li>Infrastructure support for export logistics</li>
+      <li>Farmer training on global quality standards</li>
+      <li>Access to international markets</li>
+    </ul>
+    <button class="back-btn" onclick="goBack()">Back to Schemes</button>
+  </div>
+</div>
+
+</div>
+
+
+  <main>
+    <h1>Government Schemes for Farmers</h1>
+    <div>
+      <img src="./asset/Schemes-for-Farmers-Blog-Banner.webp" alt="" height="50%" width="100%">
+    </div>
+    <br>
+    <div class="schemes-container">
+    <div class="scheme-card" onclick="openModal('pmkisan')">
+      <h3>PM-KISAN</h3>
+      <p>PM-KISAN provides income support of ₹6,000/year to all landholding farmer families in three equal installments...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('pmfby')">
+      <h3>PM Fasal Bima Yojana</h3>
+      <p>Insurance coverage for crops against natural calamities, pests, and diseases. Low premium and quick compensation...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('pmksy')">
+      <h3>PM Krishi Sinchayee Yojana</h3>
+      <p>Supports irrigation through drip/sprinkler systems, micro-irrigation infrastructure, water conservation training...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('smam')">
+      <h3>SMAM</h3>
+      <p>Subsidized agricultural machinery and tools to promote mechanization for small and marginal farmers...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('nam')">
+      <h3>eNAM</h3>
+      <p>Online trading platform for agricultural commodities; links mandis, improves market access, ensures fair pricing...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('nmsa')">
+      <h3>NMSA</h3>
+      <p>National Mission for Sustainable Agriculture promotes climate-resilient farming, integrated nutrient management...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('rky')">
+      <h3>Rashtriya Krishi Vikas Yojana</h3>
+      <p>Funds innovative agriculture projects and initiatives by states for holistic development and agri-entrepreneurship...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('kcc')">
+      <h3>Kisan Credit Card</h3>
+      <p>Provides timely credit to farmers for crop production and other needs at low interest rates...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('pkvy')">
+      <h3>Paramparagat Krishi Vikas Yojana</h3>
+      <p>Promotes organic farming through group certification and market linkages to ensure chemical-free produce...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('soil')">
+      <h3>Soil Health Card</h3>
+      <p>Provides detailed soil nutrient status for informed fertilizer usage and better crop planning...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('nmsa2')">
+      <h3>Agri Infra Fund</h3>
+      <p>Offers medium-long term loans for building agri-infrastructure like cold chains, warehouses, grading units...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('horti')">
+      <h3>National Horticulture Mission</h3>
+      <p>Promotes holistic growth of horticulture sector including fruits, vegetables, roots, tuber crops, spices, flowers...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('npcf')">
+      <h3>National Project on Climate Resilient Agriculture</h3>
+      <p>Focuses on climate-resilient research and adaptation for Indian agriculture using technologies and monitoring...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('agrimark')">
+      <h3>Integrated Scheme for Agricultural Marketing</h3>
+      <p>Supports creation of market infrastructure, grading, quality certification, and marketing development for farmers...</p>
+    </div>
+    <div class="scheme-card" onclick="openModal('sfac')">
+      <h3>Small Farmers’ Agribusiness Consortium</h3>
+      <p>Supports farmer-producer organizations (FPOs), value chains, and promotes private investment in agribusiness...</p>
+    </div>
+    
+  </div>
+
+  <div id="schemeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>About FarmSmart</h4>
+        <p>A digital initiative to empower Indian farmers by providing verified information on government schemes, resources, and expert advice.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="index.html">Home</a><br>
+        <a href="schemes.html">Schemes</a><br>
+        <a href="resources.html">Resources</a><br>
+        <a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <p>Email: <a href="mailto:support@farmsmart.in">support@farmsmart.in</a><br>
+        Helpline: +91-9876543210<br>
+        Facebook | Twitter | YouTube</p>
+      </div>
+      <div>
+        <h4>Government Portals</h4>
+        <p><a href="https://agricoop.gov.in" target="_blank">Ministry of Agriculture</a><br>
+        <a href="https://pmkisan.gov.in" target="_blank">PM-KISAN Portal</a><br>
+        <a href="https://enam.gov.in" target="_blank">eNAM Portal</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 FarmSmart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
