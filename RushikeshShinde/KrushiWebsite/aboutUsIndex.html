@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agriculture Dept. Gujarat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background-color: #006400;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #228B22;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #228B22;
+    }
+
+    .content {
+      padding: 20px;
+      display: none;
+      background: white;
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    footer {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <section class="main-banner">
+    <div class="logo-text">
+<img src="./assects/images/farmer nav.png" height="100px"  width="100%" alt="">
+      </div>
+  </section>
+  </header>
+
+  <nav class="nav-bar">
+
+
+
+
+
+
+     <a href="index.html">Home</a>
+    <a href="aboutUsIndex.html">About Us</a>
+    <a href="programsIndex.html">Programs & Schemes</a>
+    <a href="contactIndex.html">Contact</a>
+
+     
+
+   
+  </nav>
+
+   <h1>🏠Home ➡️ About Us</h1>
+
+  <div id="home" class="content active">
+   
+    <h2>Introduction.....</h2>
+    <p>The Agriculture, Farmers Welfare and Co-operation Department of Gujarat Govt. takes care 
+        of agriculture and related matters in its charge like horticulture, soil conservation, 
+        dairy development, animal husbandry and formation of policies / schemes in co-operative activities as 
+        well as implementation, monitoring and supervision. A separate Horticulture Department has been set up from the 
+        Agriculture Department considering the importance of the increasing agriculture area for Horticulture farming and horticultural
+         activities in the State.</p>
+         <p>Six Agriculture Universities are functional under the Department to carry out education
+             and research related activities in the area of agriculture and related subjects.
+              Head of the Department (HOD), Corporations, Committees and other institutions are working 
+              under the administrative control of the department to advice and assist in policy making for 
+              departmental activities and in implementation and monitoring of programs.
+
+         <p>The key objective of the Agriculture Department is to meet the need of the State and to increase the income of farmers
+             by increase in agricultural production by increasing agricultural productivity by giving the knowledge of scientific 
+             methods of agriculture to the farmers and by implementing various schemes</p>
+         <p>The main objective of the Agriculture Universities of the State is to increase the agricultural production by co-ordination
+             of agricultural research, education and extended education and by that to improve economic condition of the rural people.</p>
+  </div>
+
+  <div id="about" class="content">
+    <h2>About Us</h2>
+    <p>The department is responsible for implementing policies related to agriculture and farmer welfare across the state.</p>
+  </div>
+
+  <div id="hods" class="content">
+    <h2>Heads of Departments (HODs)</h2>
+    <ul>
+      <li>Director of Agriculture</li>
+      <li>Commissioner of Horticulture</li>
+      <li>Chief Conservator of Forests</li>
+    </ul>
+  </div>
+
+  <div id="services" class="content">
+    <h2>Our Services</h2>
+    <p>We provide agricultural extension services, subsidies, crop insurance, and more to support Gujarat's farmers.</p>
+  </div>
+
+  <div id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>Email: agri-dept@gujarat.gov.in<br>
+       Phone: 079-12345678</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Agriculture Department, Gujarat. All rights reserved.
+  </footer>
+
+  <script>
+    function showPage(pageId) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
