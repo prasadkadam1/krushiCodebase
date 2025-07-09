@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #222;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.header {
+  background: #005a2c;
+  color: white;
+  padding: 10px 0;
+}
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.logo {
+  height: 60px;
+
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.flexlogo  {
+  display: flex;
+}
+
+/* Hero */
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 40px 20px;
+}
+.about h2 {
+  margin-bottom: 15px;
+  color: #005a2c;
+}
+.about p {
+  max-width: 700px;
+  margin: auto;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #005a2c;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid green;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+}
+.stat-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-left: 5px solid #005a2c;
+  width: 250px;
+}
+.stat-card h3 {
+  margin-top: 10px;
+  color: #005a2c;
+}
+
+/* Rainfall */
+.rainfall {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+.rainfall h2 {
+  margin-bottom: 20px;
+  color: #005a2c;
+}
+.rain-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.rain-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 200px;
+  border-radius: 4px;
+}
+
+/* Quick Links */
+.quick-links {
+  padding: 30px 20px;
+}
+.quick-links h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #005a2c;
+}
+.links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.link-box {
+  background: #005a2c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+
+/* Gallery */
+/* .gallery {
+  padding: 30px 20px;
+}
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #005a2c;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+} */
+
+.gallery {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.gallery-grid {
+    display: inline-block;
+    animation: scroll-left 45s linear infinite;
+}
+
+.gallery-grid img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+/* Keyframes for scrolling */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+/* Success Stories */
+.success-stories {
+  padding: 30px 20px;
+  background: #f0f0f0;
+}
+.success-stories h2 {
+  text-align: center;
+  color: #005a2c;
+  margin-bottom: 20px;
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.story-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.story-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+}
+.story-card h4 {
+  margin-top: 10px;
+  color: #005a2c;
+  font-size: 1em;
+}
+
+/* Footer */
+.footer {
+  background: #00421c;
+  color: white;
+  padding: 30px 20px;
+}
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-grid h4 {
+  margin-bottom: 8px;
+}
+.footer-grid p {
+  font-size: 0.9em;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 20px;
+}
