@@ -1,0 +1,188 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #dbfbe5;
+      overflow-x: hidden;
+    }
+    header, footer {
+      background: #4caf50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    #div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .img {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 1rem;
+      padding: 1rem;
+      max-width: 100%;
+    }
+    .img img {
+      height: 200px;
+      flex: 0 0 auto;
+      border-radius: 10px;
+    }
+    .img-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      background-color: rgba(76, 175, 80, 0.8);
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+    .scroll-btn:hover {
+      background-color: #2e7d32;
+    }
+    .scroll-btn.left {
+      left: 10px;
+    }
+    .scroll-btn.right {
+      right: 10px;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    .hero h1 {
+      color: #2e7d32;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .feature {
+      background: white;
+      border-radius: 8px;
+      padding: 1.2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transform: translateY(20px);
+      opacity: 0;
+      animation: slideUp 0.6s forwards;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+    }
+    .feature:hover {
+      transform: scale(1.06) translateY(0);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      background: #e8f5e9;
+    }
+    .feature:nth-child(odd) { animation-delay: 0.2s; }
+    .feature:nth-child(even) { animation-delay: 0.4s; }
+
+    .about-section {
+      padding: 2rem;
+      background: #e8f5e9;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .about-section h2 {
+      color: #388e3c;
+    }
+    .about-section p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .footer-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      text-align: left;
+      padding: 2rem;
+      background: #388e3c;
+      color: white;
+    }
+    .footer-info div {
+      flex: 1 1 200px;
+      margin: 1rem;
+    }
+    .footer-bottom {
+      background: #2e7d32;
+      text-align: center;
+      padding: 1rem;
+      color: #fff;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      width: 90%;
+      color: #2e7d32;
+      position: relative;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+    }
+    .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2e7d32;
+      cursor: pointer;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

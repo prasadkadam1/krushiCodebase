@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FarmSmart - Resources</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('./asset/farm-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.92);
+      z-index: -1;
+    }
+
+    header, footer {
+      background: #4caf50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    #div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4caf50;
+      margin-bottom: 2rem;
+    }
+
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .resource-card h2 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .resource-card p {
+      line-height: 1.5;
+      color: #333;
+    }
+
+    footer {
+      padding-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .footer-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      text-align: left;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      max-width: 600px;
+      width: 90%;
+      border-radius: 10px;
+      position: relative;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #555;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div id="div">
+        <img src="./asset/logo.avif" alt="Logo" height="60px" width="60px">
+        <strong>FarmSmart</strong>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schemes.html">Schemes</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="policy.html">Policy</a></li>
+        <li><a href="authorization.html">Authorization</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Resources for Modern Farming</h1>
+    <div>
+      <img height="60%" width="100%" src="./asset/A-modern-farm-showcasing-precision-agriculture-technology.-The-scene-includes-high-tech-tractors-with-GPS-systems-drones-flying-overhead-surveying-th.webp" alt="Modern Farm Image">
+    </div>
+    <br>
+
+    <div class="resources-grid">
+      <div class="resource-card" onclick="showModal('🌿 Crop-wise Guidance', `Explore expert-recommended methods for various Indian crops such as wheat, rice, sugarcane, cotton, and pulses. Learn sowing schedules, pest resistance tips, intercropping ideas, and climate-specific guidelines. Maximize productivity using crop rotation and local climate practices. Improve profitability with seasonal diversification. Charts guide each crop stage. This resource combines traditional wisdom with modern science. Apply the best-fit method per region. Reduce crop failure risks. Increase yield through customized strategy.`)"> 
+        <h2>🌿 Crop-wise Guidance</h2><p>Best practices for wheat, rice, sugarcane, cotton, pulses, and more.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('💧 Water Management', `Learn how to use water efficiently via drip and sprinkler irrigation systems. Understand rainwater harvesting and crop-specific water needs. Budget water usage to prevent wastage. Suitable for drought-prone areas. Reuse greywater safely in agriculture. Reduce runoff and erosion. Get government subsidy guidance. Save money on input costs. Maintain healthy root zones. Balance between rainfall and irrigation.`)">
+        <h2>💧 Water Management</h2><p>Drip irrigation, rainwater harvesting, & efficient water budgeting.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🧪 Soil Health & Fertilizers', `Conduct regular soil testing to determine nutrient deficiencies. Apply fertilizers in accurate ratios to boost yield and soil fertility. Learn about pH balance and organic composting. Improve microbial life in the soil. Avoid chemical overuse. Enhance long-term productivity. Use crop-specific treatment plans. Identify micronutrient imbalances early. Protect soil structure. Partner with KVK labs.`)">
+        <h2>🧪 Soil Health & Fertilizers</h2><p>Soil testing, pH management, and smart fertilizer application.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('📱 Digital Farming Apps', `Access real-time weather alerts, mandi prices, and expert chat features. Use mobile tools for pest detection and advisory. Apps available in local languages. Plan irrigation and harvest based on forecasts. Receive government notifications directly. AI-based crop planning helps optimize results. Set reminders for fertilization and irrigation. Learn using video content. Download guides and charts. Stay connected to agri experts.`)">
+        <h2>📱 Digital Farming Apps</h2><p>Weather alerts, pest detection & mandi price tracking.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🚜 Farm Machinery', `Discover cost-effective equipment rentals and subsidies. Understand usage of tractors, tillers, seeders, and harvesters. Learn machinery safety and maintenance. Access state-sponsored custom hiring centers. Reduce manual labor and improve efficiency. Maximize coverage in less time. Compare types before buying. Find government schemes for tools. Access demo videos. Mechanize small and large farms alike.`)">
+        <h2>🚜 Farm Machinery</h2><p>Affordable machinery rentals and subsidy info.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🌾 Organic Farming Techniques', `Adopt eco-friendly farming methods using bio-pesticides and compost. Avoid harmful chemicals to protect soil and health. Learn composting, mulching, and green manure techniques. Promote biodiversity. Increase long-term soil fertility. Build natural pest resistance. Reduce input cost sustainably. Get organic certification info. Use cow dung and neem extracts. Improve consumer trust.`)">
+        <h2>🌾 Organic Farming Techniques</h2><p>Pesticide-free and compost-based sustainable farming.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🐄 Livestock Management', `Ensure proper feeding, vaccination, and shelter for livestock. Learn dairy hygiene and record keeping. Prevent diseases early. Improve milk/meat productivity. Optimize nutrition and breed selection. Use natural remedies for common issues. Maintain clean sheds. Access govt health schemes. Train in modern livestock care. Enhance income from animal husbandry.`)">
+        <h2>🐄 Livestock Management</h2><p>Care, nutrition, and health for dairy and poultry animals.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🍇 Horticulture Resources', `Get crop calendars for fruits and vegetables. Learn spacing, watering, and pruning techniques. Improve post-harvest care. Plan crop rotations with fruits and vegetables. Access polyhouse farming info. Use organic pest control methods. Learn grafting techniques. Improve seed quality. Explore value-addition ideas. Sell via farmer markets.`)">
+        <h2>🍇 Horticulture Resources</h2><p>Techniques and schedules for growing fruits and vegetables.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🛰️ Remote Sensing & Drones', `Use drones for crop monitoring, spraying, and area mapping. Access satellite imagery to detect stress areas. Improve fertilizer application through precision farming. Reduce chemical use. Save time and labor. Get training on drone use. Analyze NDVI for crop health. Automate surveillance. Increase transparency in crop planning. Leverage real-time data.`)">
+        <h2>🛰️ Remote Sensing & Drones</h2><p>Modern tech for crop monitoring and precision farming.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('💹 Market Intelligence', `Track real-time mandi prices and demand trends. Plan your harvest for the best price. Access MSP data and forecasts. Understand buyer needs. Explore contract farming options. Avoid market gluts. Learn value addition ideas. Compare rates across locations. Use apps to connect with buyers. Improve profit margins by timing sales.`)">
+        <h2>💹 Market Intelligence</h2><p>Price trends, demand insights, and MSP awareness.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('🏛️ Government Training', `Enroll in KVK trainings and agri workshops. Learn from field demos. Get certified in specific techniques. Improve practical skills. Gain knowledge in post-harvest management. Learn new tech from ICAR institutes. Join free webinars. Receive toolkits and booklets. Apply for youth skill programs. Stay updated with national agri innovations.`)">
+        <h2>🏛️ Government Training</h2><p>KVK workshops, online demos, and certification courses.</p>
+      </div>
+
+      <div class="resource-card" onclick="showModal('💼 Agri Startups & Funding', `Explore startup ideas in agri-tech and processing. Apply for seed funding and incubator support. Learn from successful agri entrepreneurs. Access government grants. Get mentorship from industry leaders. Join startup expos and pitch events. Develop scalable solutions for farmers. Use tech to bridge gaps. Tap into rural innovation. Become a change-maker in farming.`)">
+        <h2>💼 Agri Startups & Funding</h2><p>Startup support, seed funding, and innovation programs.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title">Title</h2>
+      <p id="modal-body">Summary and benefits go here...</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h4>About FarmSmart</h4>
+        <p>FarmSmart empowers Indian farmers by offering reliable resources, scheme updates, and digital tools to modernize agriculture.</p>
+      </div>
+      <div>
+        <h4>Useful Links</h4>
+        <p><a href="index.html">Home</a><br>
+        <a href="schemes.html">Government Schemes</a><br>
+        <a href="resources.html">Agri Resources</a><br>
+        <a href="contact.html">Contact Support</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:support@farmsmart.in">support@farmsmart.in</a><br>
+        Phone: +91-9876543210</p>
+        <p>Follow us: Facebook | Twitter | YouTube</p>
+      </div>
+      <div>
+        <h4>Govt. Portals</h4>
+        <p><a href="https://agricoop.gov.in" target="_blank">agricoop.gov.in</a><br>
+        <a href="https://pmkisan.gov.in" target="_blank">pmkisan.gov.in</a><br>
+        <a href="https://enam.gov.in" target="_blank">enam.gov.in</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 FarmSmart. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+      }
+    });
+
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+
+    function showModal(title, content) {
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-body').innerText = content;
+      document.getElementById('modal').style.display = 'flex';
+    }
+
+    function closeModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('modal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
