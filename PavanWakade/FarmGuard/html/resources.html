@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resources - FarmGuard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Comprehensive agricultural resources, guides, tools, and educational materials for farmers and agricultural professionals" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="module" src="../js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-brand">
+          <h2>🌾 FarmGuard</h2>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="emergency.html">Emergency</a>
+          <a href="resources.html" aria-current="page">Resources</a>
+          <a href="weather.html">Weather</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>📚 Agricultural Resources</h1>
+          <p>Comprehensive guides, tools, and educational materials for modern farming</p>
+        </div>
+      </section>
+
+      <section class="resource-categories" style="padding: 6rem 0; background: white;">
+        <div class="container">
+          <div class="resource-filter" style="text-align: center; margin-bottom: 4rem;">
+            <h2 style="margin-bottom: 2rem;">Browse Resources by Category</h2>
+            <div class="filter-buttons" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+              <button class="filter-btn active" data-category="all" style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-500); background: var(--primary-500); color: white; border-radius: 2rem; cursor: pointer; font-weight: 500; transition: all 0.3s;">All Resources</button>
+              <button class="filter-btn" data-category="guides" style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-500); background: transparent; color: var(--primary-500); border-radius: 2rem; cursor: pointer; font-weight: 500; transition: all 0.3s;">Guides</button>
+              <button class="filter-btn" data-category="tools" style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-500); background: transparent; color: var(--primary-500); border-radius: 2rem; cursor: pointer; font-weight: 500; transition: all 0.3s;">Tools</button>
+              <button class="filter-btn" data-category="training" style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-500); background: transparent; color: var(--primary-500); border-radius: 2rem; cursor: pointer; font-weight: 500; transition: all 0.3s;">Training</button>
+              <button class="filter-btn" data-category="research" style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-500); background: transparent; color: var(--primary-500); border-radius: 2rem; cursor: pointer; font-weight: 500; transition: all 0.3s;">Research</button>
+            </div>
+          </div>
+
+          <div class="resources-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            <!-- Guides -->
+            <div class="resource-card guides" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, var(--primary-500), var(--primary-600)); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">📖</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Crop Disease Identification Guide</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Comprehensive visual guide to identifying common crop diseases with treatment recommendations.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: var(--primary-100); color: var(--primary-700); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">PDF Guide</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Download</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="resource-card guides" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, var(--secondary-500), var(--secondary-600)); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🌱</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Sustainable Farming Practices</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Best practices for environmentally sustainable and economically viable farming methods.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: var(--secondary-100); color: var(--secondary-700); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Interactive Guide</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">View Online</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="resource-card tools" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🧮</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Fertilizer Calculator</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Calculate optimal fertilizer amounts based on soil tests and crop requirements.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #ede9fe; color: #7c3aed; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Web Tool</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Use Tool</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="resource-card tools" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #06b6d4, #0891b2); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">📊</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Yield Prediction Model</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Advanced modeling tool to predict crop yields based on various environmental factors.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #cffafe; color: #0891b2; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Analytics Tool</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Launch</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Training -->
+            <div class="resource-card training" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #f59e0b, #d97706); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🎓</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Integrated Pest Management Course</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Comprehensive online course covering modern IPM strategies and implementation.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #fef3c7; color: #d97706; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Online Course</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Enroll</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="resource-card training" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #ef4444, #dc2626); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🚨</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Emergency Response Training</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Learn how to handle agricultural emergencies and implement rapid response protocols.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #fee2e2; color: #dc2626; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Certification</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Start Course</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Research -->
+            <div class="resource-card research" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #10b981, #059669); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🔬</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Climate Change Impact Studies</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Latest research on climate change effects on agriculture and adaptation strategies.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #d1fae5; color: #059669; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">Research Paper</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Read Study</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="resource-card research" style="background: white; border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s;">
+              <div style="height: 200px; background: linear-gradient(135deg, #6366f1, #4f46e5); display: flex; align-items: center; justify-content: center;">
+                <div style="font-size: 4rem;">🧬</div>
+              </div>
+              <div style="padding: 2rem;">
+                <h3 style="color: var(--primary-700); margin-bottom: 1rem;">Precision Agriculture Research</h3>
+                <p style="color: var(--neutral-600); margin-bottom: 1.5rem;">Cutting-edge research in precision agriculture technologies and their applications.</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="background: #e0e7ff; color: #4f46e5; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">White Paper</span>
+                  <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem;">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-resources" style="padding: 6rem 0; background: var(--neutral-50);">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem;">Featured Resources</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+            <div class="featured-card" style="background: white; padding: 3rem; border-radius: 1.5rem; box-shadow: var(--shadow-xl); border: 3px solid var(--primary-200);">
+              <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                <div style="font-size: 3rem; margin-right: 1rem;">📱</div>
+                <div>
+                  <h3 style="color: var(--primary-700); margin-bottom: 0.5rem;">FarmGuard Mobile App</h3>
+                  <p style="color: var(--neutral-600); margin: 0;">Access all resources on-the-go</p>
+                </div>
+              </div>
+              <p style="color: var(--neutral-600); margin-bottom: 2rem;">Get instant access to emergency services, weather alerts, crop monitoring tools, and our complete resource library right from your smartphone.</p>
+              <div style="display: flex; gap: 1rem;">
+                <a href="#" class="btn btn-primary" style="flex: 1; text-align: center;">Download iOS</a>
+                <a href="#" class="btn btn-secondary" style="flex: 1; text-align: center;">Download Android</a>
+              </div>
+            </div>
+
+            <div class="featured-card" style="background: white; padding: 3rem; border-radius: 1.5rem; box-shadow: var(--shadow-xl); border: 3px solid var(--secondary-200);">
+              <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                <div style="font-size: 3rem; margin-right: 1rem;">📺</div>
+                <div>
+                  <h3 style="color: var(--secondary-700); margin-bottom: 0.5rem;">Weekly Webinar Series</h3>
+                  <p style="color: var(--neutral-600); margin: 0;">Live expert sessions every Tuesday</p>
+                </div>
+              </div>
+              <p style="color: var(--neutral-600); margin-bottom: 2rem;">Join our agricultural experts every Tuesday for live webinars covering seasonal topics, new research findings, and Q&A sessions with industry professionals.</p>
+              <div style="display: flex; gap: 1rem;">
+                <a href="#" class="btn btn-outline" style="flex: 1; text-align: center; border-color: var(--secondary-600); color: var(--secondary-600);">Register Now</a>
+                <a href="#" class="btn btn-secondary" style="flex: 1; text-align: center;">View Schedule</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resource-stats" style="padding: 6rem 0; background: linear-gradient(135deg, var(--primary-600), var(--primary-700)); color: white;">
+        <div class="container">
+          <h2 style="text-align: center; margin-bottom: 4rem; color: white;">Resource Library Statistics</h2>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Guides & Articles</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Interactive Tools</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">25+</div>
+              <div class="stat-label">Training Courses</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Research Papers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-signup" style="padding: 6rem 0; background: white;">
+        <div class="container">
+          <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+            <h2 style="margin-bottom: 1rem;">Stay Updated with New Resources</h2>
+            <p style="font-size: 1.125rem; color: var(--neutral-600); margin-bottom: 3rem;">Get notified when we publish new guides, tools, and research findings.</p>
+            <form style="display: flex; gap: 1rem; max-width: 400px; margin: 0 auto;">
+              <input type="email" placeholder="Enter your email" style="flex: 1; padding: 1rem; border: 2px solid var(--neutral-300); border-radius: var(--radius-lg); font-size: 1rem;" required>
+              <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem;">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🌾 FarmGuard</h3>
+            <p>Dedicated to supporting agricultural communities through comprehensive emergency response and support services.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#guides">Farming Guides</a></li>
+              <li><a href="#tools">Agricultural Tools</a></li>
+              <li><a href="#training">Training Courses</a></li>
+              <li><a href="#research">Research Papers</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📞 1-800-AGRI-HELP</p>
+            <p>📧 support@farmguard.com</p>
+            <p>🏢 Available 24/7</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FarmGuard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

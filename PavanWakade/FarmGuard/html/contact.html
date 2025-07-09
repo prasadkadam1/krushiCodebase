@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FarmGuard - Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact FarmGuard for support and inquiries." />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script type="module" src="../js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-brand">
+          <h2>🌾 FarmGuard</h2>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="emergency.html">Emergency</a>
+          <a href="resources.html">Resources</a>
+          <a href="weather.html">Weather</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-form-section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>We're here to help. Fill out the form below and we'll get back to you as soon as possible.</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🌾 FarmGuard</h3>
+            <p>Dedicated to supporting agricultural communities through comprehensive emergency response and support services.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="emergency.html">Emergency</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="weather.html">Weather</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📞 1-800-AGRI-HELP</p>
+            <p>📧 support@agriresponse.com</p>
+            <p>🏢 Available 24/7</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FarmGuard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
