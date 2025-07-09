@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgroFarm - Farmer Welfare & Satbara</title>
+  <link rel="stylesheet" href="Welfare.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">AgroFarm</div>
+    <ul class="nav-links">
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./policy.html">Policies</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Farmer Welfare Programs & Satbara Information</h1>
+    <p>Empowering Indian farmers with support, land transparency, and easy access to welfare services.</p>
+  </header>
+
+  <div class="welfare-info">
+  <h2>Comprehensive Farmer Welfare Programs</h2>
+  <p>
+    At AgroFarm, we believe that the foundation of a strong nation lies in the strength of its farmers. Our programs are designed not just to support agriculture, but to enhance the overall livelihood, dignity, and security of farming families. From real-time digital access to land records like Satbara, to mental wellness and market awareness, we’re building a holistic support system.
+  </p>
+
+  <h3>Major Areas of Support:</h3>
+  <ul>
+    <li>🌾 <strong>Income Protection:</strong> Helping farmers register under PM-KISAN and access ₹6,000 annual support.</li>
+    <li>💰 <strong>Crop Insurance:</strong> Guidance under the PMFBY scheme with support for weather-based and natural calamity-related claims.</li>
+    <li>🧰 <strong>Equipment Subsidy:</strong> Discounts and loan assistance for buying tractors, drip systems, and solar pumps.</li>
+    <li>📱 <strong>Digital Agriculture Tools:</strong> Free mobile alerts for weather, mandi prices, and pest control in regional languages.</li>
+    <li>📄 <strong>Land Record Services:</strong> Support for Satbara (7/12 extract) correction, mutation entry, and loan documentation.</li>
+    <li>📚 <strong>Training & Workshops:</strong> On-site and online sessions for organic farming, hydroponics, and water-efficient farming.</li>
+    <li>🧠 <strong>Mental Health Support:</strong> Counselling and peer support helplines to reduce farmer distress and suicide risks.</li>
+  </ul>
+
+  <p>
+    Our mission goes beyond productivity — we aim to create self-sufficient farming families who are aware of their rights, benefits, and responsibilities in the modern agricultural economy.
+  </p>
+
+  <p>
+    <strong>Are you a farmer looking for help?</strong> We’re here to assist you with documentation, scheme registration, land queries, and farm inputs. Fill out the form below and our support team will contact you within 48 hours.
+  </p>
+</div>
+
+  <!-- Satbara Info -->
+  <section class="satbara-section">
+    <h2>What is Satbara (7/12 Extract)?</h2>
+    <p>
+      The Satbara Utara (7/12 extract) is an important land record in Maharashtra. It shows who owns the land, what crops are grown, and if there's any loan or mortgage on it.
+    </p>
+    <p>Here’s a sample Satbara document (for demo purposes only):</p>
+
+    <div class="satbara-box">
+      <h3>गाव – Shivapur</h3>
+      <p><strong>गट नंबर:</strong> 122/3A</p>
+      <p><strong>शेताचे क्षेत्र:</strong> 2.5 एकर</p>
+      <p><strong>मालकाचे नाव:</strong> रामचंद्र गंगाराम मोरे</p>
+      <p><strong>पीक प्रकार:</strong> बाजरी, टोमॅटो</p>
+      <p><strong>पाणीपुरवठा:</strong> विहीर व ठिबक सिंचन</p>
+      <p><strong>कर्जाची नोंद:</strong> ₹75,000 (Bank of Maharashtra)</p>
+      <p><strong>हक्क धारक:</strong> कोणतीही हक्काची अडचण नाही</p>
+    </div>
+  </section>
+
+  <!-- Extended Form -->
+  <section class="form-section">
+    <h2>Apply for Assistance or Correct Satbara Details</h2>
+    <form onsubmit="return handleWelfareForm(event)">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="tel" placeholder="Mobile Number" required />
+      <input type="text" placeholder="Village / Taluka / District" required />
+      <input type="text" placeholder="Survey Number / Gat Number" required />
+      <input type="number" placeholder="Total Farm Area (in acres)" required />
+      <input type="text" placeholder="Type of Crop Grown (e.g., Rice, Cotton)" required />
+      <select required>
+        <option value="">-- Ownership Type --</option>
+        <option value="Self">Self-owned</option>
+        <option value="Inherited">Inherited</option>
+        <option value="Leased">Leased</option>
+      </select>
+      <textarea rows="4" placeholder="Describe your issue or request (e.g., Satbara correction, crop subsidy help)" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>About AgroFarm</h3>
+      <p>AgroFarm is dedicated to supporting Indian farmers through welfare schemes, digital land records, and sustainable agriculture practices.</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>AgroFarm Pvt. Ltd.</p>
+      <p>Plot No. 12, AgriTech Park, Nashik, Maharashtra, India</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ support@agrofarm.com</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="./home.html">🏠 Home</a></li>
+        <li><a href="./policy.html">📄 Policies</a></li>
+        <li><a href="#">🧑‍🌾 Farmer Login</a></li>
+        <li><a href="https://mahabhumi.gov.in/" target="_blank">📜 Satbara Portal</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <p>
+        <a href="#">🌐 Facebook</a><br>
+        <a href="#">📸 Instagram</a><br>
+        <a href="#">🐦 Twitter</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AgroFarm. All rights reserved.</p>
+    <p>Serving farmers with transparency, innovation, and trust.</p>
+  </div>
+</footer>
+
+
+  <script src="Welfare.js"></script>
+</body>
+</html>

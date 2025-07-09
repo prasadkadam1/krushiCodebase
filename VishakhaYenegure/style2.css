@@ -1,0 +1,300 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logo-marquee {
+  overflow: hidden;
+  position: relative;
+  background: #f4f4f4;
+  padding: 10px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  animation: scrollLogos 10s linear infinite;
+  width: max-content;
+}
+
+.marquee-track img {
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Animation keyframes */
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Optional: Responsive */
+@media (max-width: 768px) {
+  .marquee-track {
+    gap: 25px;
+  }
+
+  .marquee-track img {
+    height: 70px;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://img.freepik.com/free-photo/detail-rice-plant-sunset-valencia-with-plantation-out-focus-rice-grains-plant-seed_181624-25838.jpg') no-repeat center center;
+  background-size: cover;
+  color: black;
+  text-align: center;
+  height: 75vh;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 35vh;
+  color: black;
+}
+
+.hero p{
+    color: black;
+    margin-bottom: 10vh;
+    font-size: large;
+}
+
+/* About & Contact */
+.about, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #1b5e20;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 10px;
+  color: #c5e1a5;
+}
+
+.footer-column p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #4caf50;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #e0f2f1;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+/* Scroll Button */
+#scrollBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2e7d32;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 200px;
+    text-align: right;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: #f9fbe7;
+  text-align: center;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact {
+  padding: 60px 20px;
+  background-color: #e8f5e9;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-info div {
+  width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.social-section {
+  margin-top: 40px;
+}
+
+.social-section a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.social-section a:hover {
+  text-decoration: underline;
+}
