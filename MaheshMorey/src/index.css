@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common Animation Keyframes */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes headingFade {
+  from { opacity: 0; letter-spacing: 0.1em; }
+  to { opacity: 1; letter-spacing: 0.02em; }
+}
+
+@keyframes leafWiggle {
+  0%, 100% { transform: rotate(-8deg) scale(1.1); }
+  50% { transform: rotate(8deg) scale(1.2); }
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes bgGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Common Animation Classes */
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 8s ease-in-out infinite;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s cubic-bezier(.4,0,.2,1) both;
+}
+
+.animate-headingFade {
+  animation: headingFade 1.2s cubic-bezier(.4,0,.2,1) both;
+}
+
+.animate-leafWiggle {
+  animation: leafWiggle 2.5s infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.2s infinite;
+}
+
+.animate-bgGradient {
+  background-size: 200% 200%;
+  animation: bgGradient 12s ease-in-out infinite;
+}
