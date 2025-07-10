@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Access Agriculture - Publications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f9f4;
+            color: #333;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .home-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: white;
+            color: #00796B;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .home-button:hover {
+            background: #004D40;
+            color: white;
+        }
+        .metrics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .metric {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .search-bar {
+            text-align: center;
+            padding: 1rem;
+        }
+        .search-bar input {
+            padding: 0.5rem;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        
+        }
+        .card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            font-size: 1.1rem;
+            margin-top: 0;
+        }
+        .card a {
+            text-decoration: none;
+            color: #4caf50;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Access Agriculture - Publications and Theses</h1>
+         <a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+    </header>
+
+    <section class="metrics">
+        <div class="metric"><strong>90M+</strong><br>Viewers</div>
+        <div class="metric"><strong>320</strong><br>Entrepreneurs</div>
+        <div class="metric"><strong>110</strong><br>Languages</div>
+        <div class="metric"><strong>6,000</strong><br>Agroecology Videos</div>
+    </section>
+
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search publications..." onkeyup="filterPublications()" />
+    </section>
+
+    <section class="grid" id="publicationGrid">
+        <div class="card">
+            <h3>Agroecology in Practice: From Local Initiatives to Global Scaling Through Video</h3>
+            <p>JW Bentley, P Van Mele (2025)</p>
+            <a href="#">Buy book</a>
+        </div>
+        <div class="card">
+            <h3>The potential of farmer training video for supporting agroecological vegetable production in Benin</h3>
+            <p>Zoundji, Okry, Van Mele, Bentley, Sackey (2024)</p>
+            <a href="#">Download article</a>
+        </div>
+        <div class="card">
+            <h3>Leveraging video integration for enhanced agricultural extension reforms in Uganda</h3>
+            <p>Karubanga, Agea, Rugare, Mubangizi (2024)</p>
+            <a href="#">Download article</a>
+        </div>
+        <div class="card">
+            <h3>Young changemakers: Scaling agroecology using video in Africa and India</h3>
+            <p>Van Mele, Mohapatra, Tabet, Flao</p>
+            <a href="#">Download book</a>
+        </div>
+        <div class="card">
+            <h3>Videos on agroecology for a global audience of farmers</h3>
+            <p>Bentley, Van Mele, Chadare, Chander</p>
+            <a href="#">Download article</a>
+        </div>
+        <!-- <div class="card">
+            <h3>Training videos on agroecology – Putting the power of learning in farmers’ hands</h3>
+            <p>Savitri Mohapatra (2022)</p>
+            <a href="#">Download article</a>
+        </div> -->
+    </section>
+
+    <footer>
+        © 2025 Access Agriculture. Empowering Farmers Globally.
+    </footer>
+
+    <script>
+        function filterPublications() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

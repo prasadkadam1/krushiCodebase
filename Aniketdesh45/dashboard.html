@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Dashboard</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f0f0f0;
+        padding: 40px;
+      }
+      .container {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #333;
+      }
+      p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>User Details</h2>
+      <p><strong>Username:</strong> <span id="userDisplay"></span></p>
+      <p><strong>Password:</strong> <span id="passDisplay"></span></p>
+      <p><strong>Login Time:</strong> <span id="timeDisplay"></span></p>
+    </div>
+
+    <script>
+      const currentUser = localStorage.getItem("currentUser");
+      const users = JSON.parse(localStorage.getItem("users")) || {};
+
+      if (!currentUser || !users[currentUser]) {
+        alert("User not found or not logged in.");
+        window.location.href = "index.html";
+      } else {
+        const userData = users[currentUser];
+        document.getElementById("userDisplay").textContent = currentUser;
+        document.getElementById("passDisplay").textContent = userData.password;
+        document.getElementById("timeDisplay").textContent = userData.timestamp;
+      }
+    </script>
+  </body>
+</html>

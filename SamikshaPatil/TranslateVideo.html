@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guidelines for Translating Videos | Access Agriculture</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; background: #f0f4f8; color: #333; }
+header { background: #2a9d8f; color: white; padding: 20px; text-align: center; }
+header h1 { margin: 0; font-size: 24px; }
+.section { max-width: 900px; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.section h2 { color: #2a9d8f; }
+ul { line-height: 1.6; }
+.button { display: inline-block; background: #2a9d8f; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background 0.3s; }
+.button:hover { background: #21867a; }
+footer { background: #264653; color: white; text-align: center; padding: 15px; margin-top: 20px; font-size: 14px; }
+.progress-container { width: 100%; background: #ddd; height: 5px; position: fixed; top: 0; left: 0; }
+
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+.progress-bar { height: 5px; background: #2a9d8f; width: 0%; }
+</style>
+</head>
+<body>
+<div class="progress-container"><div class="progress-bar" id="progressBar"></div></div>
+<header>
+<h1>Guidelines for Translating Videos</h1>
+<a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+</header>
+<div class="section">
+<h2>Translation Steps</h2>
+<ul>
+<li>Request and understand the script before translation.</li>
+<li>Use simple, clear language suited for farmers.</li>
+<li>Type the translated script clearly with double-spacing.</li>
+<li>Maintain timing and style, using punctuation for clarity.</li>
+<li>Have the script checked by an expert and test it aloud.</li>
+</ul>
+<a class="button" href="https://www.accessagriculture.org/guidelines-translating-video" target="_blank">View Full Guidelines</a>
+</div>
+<div class="section">
+<h2>Voice Recording Best Practices</h2>
+<ul>
+<li>Record in a quiet place with good acoustics.</li>
+<li>Use WAV 48KHz 16bit for high-quality audio.</li>
+<li>Keep a clear, conversational tone and check levels to avoid distortion.</li>
+<li>Label files properly with programme, language, and shot numbers.</li>
+<li>Review all recordings before finalizing.</li>
+</ul>
+<a class="button" href="https://www.accessagriculture.org/sites/default/files/awp/download/2022-02/Using%20this%20site%20-%20Guidelines%20for%20translating%20video%20scripts%202016%20ENGLISH.pdf" target="_blank">Download Guidelines PDF</a>
+</div>
+<div class="section">
+<h2>Interactive Tips</h2>
+<p>✅ Use our guidelines to contribute to accessible farmer training content.<br>✅ Contact Access Agriculture if you require additional support during translation or recording.<br>✅ Consider using <a href="https://www.audacityteam.org/" target="_blank">Audacity</a> for editing and trimming your recordings.</p>
+</div>
+<footer>
+&copy; 2025 Access Agriculture | All Rights Reserved
+</footer>
+<script>
+// Progress bar on scroll
+window.onscroll = function() { progressBar() };
+function progressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+}
+</script>
+</body>
+</html>

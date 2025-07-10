@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Access Agriculture Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Roboto', sans-serif; margin: 0; background: #f5f7fa; color: #333; }
+header { background: #2a9d8f; color: #fff; padding: 20px; text-align: center; }
+header h1 { margin: 0; font-size: 26px; }
+nav { margin-top: 10px; }
+nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: 500; }
+.section { max-width: 900px; background: #fff; padding: 25px; margin: 20px auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.section img { width: 100%; border-radius: 8px; margin-top: 10px; }
+.button { display: inline-block; background: #264653; color: #fff; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: background 0.3s; }
+.button:hover { background: #1d3557; }
+footer { background: #264653; color: #fff; text-align: center; padding: 15px; margin-top: 20px; font-size: 14px; }
+ul { line-height: 1.6; }
+.home-button {
+    display: inline-block;
+    margin-top: 1em;
+    background: white;
+    color: #4caf50;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Explore Our Platform | Access Agriculture</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#features">Features</a>
+<a href="#howto">How To</a>
+<a href="http://127.0.0.1:5500/AgricultureWebsite.html?#">Home</a>
+</nav>
+</header>
+<div class="section" id="about">
+<h2>About Access Agriculture</h2>
+<p>Access Agriculture offers a platform with over 6,000 agroecology training videos in 110 languages to support sustainable agriculture in developing countries. It aims to empower farmers by providing free, downloadable high-quality videos, impacting over 90 million viewers worldwide.</p>
+<a href="http://127.0.0.1:5500/AgricultureWebsite.html" class="home-button">🏠 Home</a>
+<img src="./assessts/Screenshot 2025-07-03 151305.png" alt="Access Agriculture Logo">
+</div>
+<div class="section" id="features">
+<h2>Platform Features</h2>
+<ul>
+<li>14 categories of quality scripted training videos</li>
+<li>Free registration and downloads</li>
+<li>Downloadable MP4 and MP3 files for offline use</li>
+<li>Multi-language subtitles for inclusivity</li>
+<li>EcoAgtube for community-led video sharing</li>
+<li>Resources for teachers, NGOs, and entrepreneurs</li>
+<li>Links for impact stories to inspire usage in the field</li>
+</ul>
+<img src="./assessts/Screenshot 2025-07-03 151333.png" alt="Farmers Using Videos">
+</div>
+<div class="section" id="howto">
+<h2>How To Use</h2>
+<p>Register on the platform for free to download videos. Search for videos using category, keywords, or language. Videos can be used for farmer training, community screenings, and educational purposes, respecting copyright rules. For translation and re-use in edited content, contact Access Agriculture for permissions.</p>
+<a href="https://www.accessagriculture.org/explore-our-platform" target="_blank" class="button">Explore Platform</a>
+<a href="https://www.accessagriculture.org/donate" target="_blank" class="button">Donate Now</a>
+</div>
+<footer>
+&copy; 2025 Access Agriculture | All Rights Reserved
+</footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+});
+});
+</script>
+</body>
+</html>
